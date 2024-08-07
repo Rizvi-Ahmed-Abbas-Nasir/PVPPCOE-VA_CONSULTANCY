@@ -2,32 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.HamBurgerIcon{
+  z-index: 50;
 }
+.label{
+  display:flex;
+  flex-direction:column;
+  width:3rem;
+  cursor:pointer;
+  justify-items: center;   
+ }
+ 
+ .label .span{
+  background: white;
+  border-radius:50px;
+  height:3px;
+  margin: 7% 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  margin-left: 0.5rem;
+ 
+ }
+ 
+ .span:nth-of-type(1){
+   width:70%;
+   
+ }
+ .span:nth-of-type(2){
+   width:70%;
+ }
+ 
+ 
+ .span:nth-of-type(3){
+   width:70%;
+  
+ }
+ 
+ 
+.input[type="checkbox"]{
+   display:none;
+ }
+ 
+ 
+ .input[type="checkbox"]:checked ~ .span:nth-of-type(1){
+    background-color: white;
+   transform-origin:bottom;
+   transform:rotatez(45deg) translate(5px,0px)
+ }
+ 
+ 
+ .input[type="checkbox"]:checked ~ .span:nth-of-type(2){
+  background-color: white;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+   transform-origin:top;
+   transform:rotatez(-45deg)
+ }
+ 
+ 
+.input[type="checkbox"]:checked ~ .span:nth-of-type(3){
+  background-color: white;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+   transform-origin:bottom;
+   width:50%;
+   transform: translate(17px,-3px) rotatez(45deg);
+ 
+ }
