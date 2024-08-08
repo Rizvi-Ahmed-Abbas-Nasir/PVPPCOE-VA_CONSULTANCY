@@ -11,7 +11,7 @@ export default function Header(){
                 <div className="flex items-center gap-2 w-[20rem]"> 
                     <div>
                     <Image
-                    className="w-[3.5rem] bg-[white] rounded-full"
+                    className="w-[3rem]"
                     src={Logo}
                     width={50}
                     height={50}

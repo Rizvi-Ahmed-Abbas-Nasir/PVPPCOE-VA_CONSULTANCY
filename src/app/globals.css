@@ -2,6 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
+.HomePage
+{
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-left:2rem ;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.HomePage video
+{
+  filter: brightness(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1919;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 4.7rem;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 130px;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 3.7em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 25px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
 
 .HamBurgerIcon{
   z-index: 50;
@@ -54,7 +142,7 @@
  .input[type="checkbox"]:checked ~ .span:nth-of-type(2){
   background-color: white;
 
-   transform-origin:top;
+   transform-origin:  top;
    transform:rotatez(-45deg)
  }
  
