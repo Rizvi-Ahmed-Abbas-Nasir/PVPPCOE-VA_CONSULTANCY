@@ -1,9 +1,11 @@
 import Image from "next/image";
+import AboutUs from "@/components/AboutUs";
 
 export default function Home() {
   return (
-   <div className="bg-[#0e0c15] w-full h-[150vh]">
-    <h1>Content</h1>
+   <div className="">
+    <h1 className="h-screen flex justify-center items-center text-white">Video</h1>
+    <AboutUs/>
    </div>
   );
 }
