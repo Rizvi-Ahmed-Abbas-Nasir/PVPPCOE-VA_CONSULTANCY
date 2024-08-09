@@ -28,9 +28,9 @@ export default function Landing(){
       </video>
       <div className='overlay'></div>
       <div className='text'>
-        <h2>PVPPCOE CONSULTANCY</h2>
-        <h3>VASANTDATA PATIL</h3>
-        <p>The need for using alternative fuel for mobility is higher than ever before. EVs are one such option as such vehicles produce zero-emission.</p>
+        <h2 className="text-[0.8rem] md:text-[1.2rem] lg:text-[3rem] xl:text-[4.7rem]">PVPPCOE CONSULTANCY</h2>
+        <h3  className="text-[0.6rem] md:text-[1.1rem] lg:text-[2rem] xl:text-[3.7rem]">VASANTDATA PATIL</h3>
+        <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem]">The need for using alternative fuel for mobility is higher than ever before. EVs are one such option as such vehicles produce zero-emission.</p>
         <div>
         <a href='#'>Explore</a>
         </div>
