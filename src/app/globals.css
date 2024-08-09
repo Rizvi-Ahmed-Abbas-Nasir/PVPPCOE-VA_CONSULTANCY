@@ -2,6 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animations */
+body{
+  background-color: #0e0c15;
+}
+@keyframes fade-down {
+  0%{
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: rotateY(0px) scale(1);
+  }
+}
+.Header{
+  height:11vh ;
+  transition: 500ms;
+
+
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.slider {
+  background: #0e0c15;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* .slider::before,
+.slider::after {
+  background: #0e0c15;
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+} */
+
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+  color: #0e0c15;
+  background: #0e0c15;
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+.is-sticky {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1.5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  background: linear-gradient(135deg, rgba(193, 192, 192, 0.1), rgba(111, 110, 110, 0));
+  /* background-color: white !important; */
+  /* animation: 1s ease-in 500ms normal none 1 running fade-down; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  transition: 500ms;
+
+
+}
+
 .HomePage
 {
   position: relative;

@@ -5,6 +5,7 @@ import { FaLocationArrow } from "react-icons/fa";
 export default function AboutUs() {
   return (
     <div className="h-screen flex flex-col md:flex-row bg-[#0e0c15] w-full">
+    
       <section className="flex-1 flex flex-col justify-center items-start p-8 md:p-12 text-white">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
           Creative Web Agency Delivering Custom Solutions

@@ -2,11 +2,39 @@
 import Image from "next/image";
 import Logo from "../Assets/IMG/Logo.png";
 import { useState } from "react";
+import { useEffect } from "react";
+
+
 export default function Header() {
+
+
+    useEffect(() => {
+        if (typeof document !== "undefined") {
+        //   var hiddenElements1 = document.querySelectorAll(".hidden1");
+        //   OnScrollAnimation(hiddenElements1);
+        }
+    
+        if (typeof window !== "undefined") {
+          window.addEventListener("scroll", isSticky);
+        }
+    
+        return () => {
+          if (typeof window !== "undefined") {
+            window.removeEventListener("scroll", isSticky);
+          }
+        };
+      });
   const [active, setActive] = useState(false);
+  const isSticky = (e) => {
+    const header = document.querySelector(".header-section");
+    const scrollTop = window.scrollY;
+    scrollTop >= 80
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
 
     return(
-        <div className="fixed top-0 flex justify-center left-0 w-full z-50  border-b border-n-7  lg:backdrop-blur-sm  ">
+        <div className="fixed Header  header-section top-0 flex justify-center left-0 w-full z-50  border-b border-n-7  lg:backdrop-blur-sm  ">
             <div className=" lg:h-[10.5vh] h-[11vh] w-full flex justify-between items-center  px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
                 <div className="flex items-center gap-2 w-[20rem]"> 
                     <div>

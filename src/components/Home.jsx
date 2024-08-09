@@ -1,4 +1,12 @@
 "use client";
+import oneIMG from "../Assets/IMG/1.png"
+import twoIMG from "../Assets/IMG/2.png"
+import threeIMG from "../Assets/IMG/3.png"
+import fourIMG from "../Assets/IMG/4.png"
+import fiveIMG from "../Assets/IMG/7.png"
+import sixIMG from "../Assets/IMG/6.png"
+import sevenIMG from "../Assets/IMG/8.png"
+import Image from "next/image";
 import React, { useRef } from 'react';
 
 export default function Landing(){
@@ -10,9 +18,11 @@ export default function Landing(){
       videoRef.current.playbackRate = 0.8;
     }  }
 
+  
+
     return(
-      <div className="w-full">
-         <div className='HomePage'>
+      <div className="w-full flex flex-col">
+         <div className='HomePage '>
       <video ref={videoRef} autoPlay="autoplay" loop="loop" muted >
         <source src="/_next-video/bg.mp4" type="video/mp4" />
       </video>
@@ -25,13 +35,53 @@ export default function Landing(){
         <a href='#'>Explore</a>
         </div>
       </div>
-      <div className='IconSocial'> 
-      <ul>
-        {/* <li classNaem='icon1' > <img classNaem='icon1' src={facebookicon} alt="facebook" /></li>
-        <li className='icon2'>  <img  src={intagramicon} alt="insta" /></li>
-        <li className='icon3'> <img  src={twittericon} alt="twitter" /></li> */}
-      </ul>
+     
       </div>
+      <div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<Image src={oneIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={twoIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={threeIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={fourIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={fiveIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={threeIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={fiveIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={oneIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={fourIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={oneIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={twoIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={oneIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={fiveIMG} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<Image src={fourIMG} height="100" width="250" alt="" />
+		</div>
+	</div>
       </div>
       </div>
     );
