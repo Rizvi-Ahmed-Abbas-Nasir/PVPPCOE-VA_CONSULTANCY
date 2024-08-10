@@ -16,9 +16,11 @@ export default function Projects() {
       title: "Project 3",
     },
     {
-      src: "/images/sample_project1.webp",
-      title: "Project 4",
+      src: "/images/sample_project2.webp",
+      title: "Project 3",
     },
+    
+
   ];
 
   return (

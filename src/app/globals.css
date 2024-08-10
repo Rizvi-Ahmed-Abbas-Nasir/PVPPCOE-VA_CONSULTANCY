@@ -249,3 +249,141 @@ body{
    transform: translate(17px,-3px) rotatez(45deg);
  
  }
+ #page3main{
+  background-color:#000125;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  overflow: hidden;
+  position: relative;
+}
+
+.box{
+    height: 60%;
+    width: 15%;
+    background-color: #000116 ;
+   z-index: 2;
+   box-shadow: 0px 0px 10px 8px #02102c;
+   border-radius : 10px ;
+   border: 1px #b3b4b9 solid;
+}
+#box1{
+  width: 30%;
+}
+.circles{
+  height: 25%;
+  width: 15%;
+  border-radius: 50%;
+  background-color:rgb(6, 36, 68);
+  position: absolute;
+ 
+  box-shadow: 0px 0px 200px 200px rgb(6, 36, 68) ;
+ 
+}
+#cir2{
+  top: 0%;
+  left: 0%;
+  scale: 0.6;
+  
+  animation: mymove 5s infinite linear;
+  
+}
+@keyframes mymove {
+  0%   {}
+  25%{
+    scale: 0.3;
+  }
+  75% {scale: 0.8;}
+  100%{
+    scale:0.6;
+  }
+}
+#cir3{
+  bottom: 0%;
+  right: 0%;
+  scale: 0.6;
+  animation: mymove 5s infinite linear;
+  
+}
+
+
+#page4up{
+  border-radius:  40% / 10%;
+  margin-top: -10%;
+  justify-content: center;
+  align-items: end;
+  gap: 10%;
+  position: relative;
+  z-index: 99;
+  margin-bottom: -50px;
+}
+#page4up h3{
+ 
+  color: rgb(0, 185, 255);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#page4up h5{
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#page4up p{
+  color: gray;
+  font-size: 20px;
+  width: 500px;
+}
+.imagediv{
+  background-color: antiquewhite;
+  width: 20%;
+ height: 100%;
+ overflow: hidden;
+
+ 
+}
+.image1p4:hover {
+   scale: 120%;
+   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.image1p4{
+  height: 100%;
+  width: 100%;
+  transition: scale 0.5s;
+}
+
+
+#belowp4{
+  border-radius: 40% 40% / 10% 10% 0px 0px;
+  margin-top: -80px;
+  position: relative;
+  box-shadow: 0px 0px 90px 25px black ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#belowp4 h2{
+  font-size: 40px;
+  color: rgb(59, 123, 206);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+#belowp4 h5{
+  font-size:18px ;
+  
+}
+#belowp4 h4{
+  font-size:25px ;
+  color: rgb(95, 101, 104);
+  font-weight: 700;
+}
+.lpcard{
+ align-content: center;
+  display: flex;
+ 
+  justify-content: center;
+}
