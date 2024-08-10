@@ -9,24 +9,26 @@ export default function Services() {
 
   return (
     <>
-      <div className="w-full h-[150vh] bg-[#0e0c15] flex-col overflow-hidden relative">
+      <div className="w-full h-[180vh] bg-[#0e0c15] flex-col overflow-hidden relative">
         <div
-          className="w-full h-[35%] bg-[#0e0c15] flex align-end gap-[100px]"
+          className="w-full h-[50%] bg-[#0e0c15] flex justify-center  items-start gap-[100px]"
           id="page4up"
         >
-          <div className="w-[40%] h-[80%] flex-col align-top pt-[6vw]">
+          <div className="w-full  h-[70%] flex justify-center ">
+          <div className="w-[40%] h-[80%] flex-col align-top pt-[6vw] flex gap-3">
             <h3>Why are you here?</h3>
-            <h5>Explore our web design services</h5>
+            <h5 className="text-white">Explore our web design services</h5>
           </div>
           <div className="w-[30%] h-[80%] flex-col align-bottom pt-[6vw]">
-            <p>
+            <p className="text-white">
               As a full-service web design agency, we handle all of your
               digital needs under one roof. Our custom web design services
               include thorough research and planning, bespoke designs and
               digital strategies tailored to grow your reach, drive traffic and
               encourage engagement.
             </p>
-            <h4>Continue Reading</h4>
+            {/* <h4>Continue Reading</h4> */}
+          </div>
           </div>
         </div>
         <section className="allimages w-full h-[40%] flex z-5 align-middle justify-items-center bg-[#0e0c15]">
