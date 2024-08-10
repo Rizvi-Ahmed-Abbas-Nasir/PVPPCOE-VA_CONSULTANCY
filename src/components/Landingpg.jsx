@@ -21,7 +21,7 @@ export default function Landing(){
   
 
     return(
-      <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col ">
          <div className='HomePage '>
       <video ref={videoRef} autoPlay="autoplay" loop="loop" muted >
         <source src="/_next-video/bg.mp4" type="video/mp4" />
@@ -46,9 +46,9 @@ export default function Landing(){
       </div>
      
       </div>
-      <div className="slider">
-	<div className="slide-track">
-		<div className="slide">
+      <div className="slider  ">
+	<div className="slide-track z-4">
+		<div className="slide z-4">
 			<Image src={oneIMG} height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
