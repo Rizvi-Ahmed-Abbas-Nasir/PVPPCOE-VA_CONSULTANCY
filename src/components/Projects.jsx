@@ -35,7 +35,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#0e0c15] w-full text-white p-8">
+    <div className="min-h-screen flex flex-col items-center bg-[#41356d] w-full text-white p-8 pb-40">
       <section className="flex justify-center items-center flex-col space-y-3 mb-8 gap-2">
         <h2 className="text-[4rem] font-bold">OUR WORK</h2>
         <h1 className="text-[3rem]  text-center">

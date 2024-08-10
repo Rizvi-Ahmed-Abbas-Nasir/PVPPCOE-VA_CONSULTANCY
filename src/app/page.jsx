@@ -12,7 +12,6 @@ export default function Home() {
     <Landing />
     <AboutUs/>
     <Projects/>
-    <Services/>
     <ProductServices />
     <Footer/>
    </div>
