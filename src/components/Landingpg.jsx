@@ -32,7 +32,7 @@ export default function Landing(){
         <h3  className="text-[0.6rem] md:text-[1.1rem] lg:text-[2rem] xl:text-[3.7rem]">VASANTDATA PATIL</h3>
         <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem]">The need for using alternative fuel for mobility is higher than ever before. EVs are one such option as such vehicles produce zero-emission.</p>
         <div>
-        <a href='#'>Explore</a>
+        <a href='#'>Contact us</a>
         </div>
       </div>
      
