@@ -6,22 +6,34 @@ export default function Projects() {
   // Define the project objects
   const projects = [
     {
-      src: "/images/sample_project1.webp",
+      src: "/images/temp2back.png",
       title: "Project 1",
+      src2:"/images/tem2.png",
+      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+    },
+    {
+      src: "/images/temp6back.png",
+      title: "Project 2",
+      src2:"/images/tem6.png",
+      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
 
     },
     {
-      src: "/images/sample_project2.webp",
-      title: "Project 2",
+      src: "/images/temp4back.png",
+      title: "Project 3",
+      src2:"/images/tem3.png",
+      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+
     },
     {
-      src: "/images/sample_project2.webp",
+      src: "/images/temp5back.png",
       title: "Project 3",
+      src2:"/images/tem5.png",
+      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+
     },
-    {
-      src: "/images/sample_project2.webp",
-      title: "Project 3",
-    },
+   
+   
     
 
   ];
@@ -44,7 +56,7 @@ export default function Projects() {
       </section>
       <section className="flex flex-wrap justify-center w-full">
         {projects.map((project, index) => (
-          <div key={index} className="contentimg relative w-full md:w-1/2 p-2" >
+          <div key={index} className="contentimg relative  w-full md:w-1/2 p-2" >
             <Image
               src={project.src}
               alt={project.title}
@@ -54,7 +66,7 @@ export default function Projects() {
             />
            <div className="insideimg ">
            <Image
-              src={Temp}
+              src={project.src2}
               alt={project.title}
               className=" object-cover"
               height={800}
@@ -63,12 +75,11 @@ export default function Projects() {
            </div>
             
             <div className="blackout w-full h-[80%] bg-black  ">
-            <h3 className="projectnbtn absolute top-20 left-8 text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-md">
+            <h3 className="projectnbtn absolute top-6 left-8 text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-md">
               {project.title}
             </h3>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" >Featured Website Design</h2>
-              <p> Featured Website Design Projects
-              Custom B2C, B2B and eCommerce solutions </p>
+              <p> {project.desc} </p>
               <h4 className="flex ">LAUNCH THE WEBSITE 
               <GoChevronRight className="sideicon"/>
               </h4>

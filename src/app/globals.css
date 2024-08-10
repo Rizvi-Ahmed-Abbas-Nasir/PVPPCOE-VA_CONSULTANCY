@@ -266,7 +266,7 @@ body{
  
   position: absolute;
   width: 40%;
-  height: 90%;
+  height: 100%;
   opacity: 0;
   right: 0%;
   transform: rotateY(-180deg);
@@ -285,6 +285,7 @@ body{
 .contentimg{
   position: relative;
   overflow: hidden;
+  height: 500px;
 }
 .contentimg:hover .insideimg{
   transform: perspective(400px) rotateY(-30deg) scale(1);
@@ -306,7 +307,7 @@ body{
  justify-content: center;
  align-items: start;
  padding: 5%;
- transform: translateY(-30%);
+ transform: translateY(-20%);
 }
 .contentimg:hover .blackout{
   transform: translateY(-100%);

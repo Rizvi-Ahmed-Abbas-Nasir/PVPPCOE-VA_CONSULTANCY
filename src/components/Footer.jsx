@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div>
       <div className="flex from-blue-400 to-blue-500 bg-gradient-to-b flex-col md:px-20 py-10">
-        <h1 className="text-3xl font-bold text-white p-4 md:p-6 md:text-6xl">Let's Grow Your Brand</h1>
+        <h1 className="text-3xl font-bold text-white p-4 md:p-6 md:text-6xl">Lets Grow Your Brand</h1>
 
         <div className="flex flex-row flex-wrap">
        
