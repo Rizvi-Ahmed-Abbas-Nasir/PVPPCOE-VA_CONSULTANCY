@@ -7,7 +7,7 @@ export default function Projects() {
   const projects = [
     {
       src: "/images/temp2back.png",
-      title: "Project 1",
+      title: "SalahCar",
       src2:"/images/tem2.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
     },
@@ -32,37 +32,31 @@ export default function Projects() {
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
 
     },
-   
-   
-    
-
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center  bg-[#00042a] w-full text-white p-8">
-      
-
-      <section className="flex justify-center items-center z-4 flex-col space-y-3 mb-8">
-        <h2 className="text-2xl font-bold">OUR WORK</h2>
-        <h1 className="text-4xl font-bold text-center text-cyan-300 ">
+    <div className="min-h-screen flex flex-col items-center bg-[#0e0c15] w-full text-white p-8">
+      <section className="flex justify-center items-center flex-col space-y-3 mb-8 gap-2">
+        <h2 className="text-[4rem] font-bold">OUR WORK</h2>
+        <h1 className="text-[3rem]  text-center">
           Featured Website Design Projects
         </h1>
-        <div className="flex justify-center items-center flex-col">
-          <p className="text-xl font-bold">
+        <div className="flex justify-center items-center flex-col gap-3">
+          <p className="text-[1.2rem] ">
             Custom B2C, B2B and eCommerce solutions
           </p>
-          <p className="text-2xl font-bold text-center">
+          <p className="text-[1rem] text-center">
             optimized for traffic, engagement and conversion.
           </p>
         </div>
       </section>
       <section className="flex flex-wrap justify-center w-full">
         {projects.map((project, index) => (
-          <div key={index} className="contentimg relative z-4 w-full md:w-1/2 p-2" >
+          <div key={index} className="contentimg relative  w-full md:w-1/2 p-2 rounded-xl" >
             <Image
               src={project.src}
               alt={project.title}
-              className="object-cover w-full h-full imagebig"
+              className="object-cover w-full h-full imagebig rounded-xl  "
               height={1000}
               width={1000}
             />
