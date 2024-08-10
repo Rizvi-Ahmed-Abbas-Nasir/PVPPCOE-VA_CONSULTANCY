@@ -59,7 +59,7 @@ export default function Header() {
                         <li  className="cursor-pointer hover:text-white">CONSULTANCY</li>
                     </ul>
                 </div>
-                <div className="text-n-1 lg:inline-flex hidden cursor-pointer  rounded-md text-xs  w-[7rem] border-[3px] button relative  items-center justify-center h-11 transition-colors hover:text-color-1  ">
+                <div className="text-n-1 contactOnHover lg:inline-flex hidden cursor-pointer  rounded-md text-xs  w-[7rem] border-[3px] button relative  items-center justify-center h-11 transition-colors hover:text-color-1  ">
                     <button><h3 className="uppercase">Contact Us</h3></button>
                 </div>
                 <div
