@@ -37,48 +37,48 @@ export default function Landing(){
       </div>
      
       </div>
-      <div class="slider">
-	<div class="slide-track">
-		<div class="slide">
+      <div className="slider">
+	<div className="slide-track">
+		<div className="slide">
 			<Image src={oneIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={twoIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={threeIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={fourIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={fiveIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={threeIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={fiveIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={oneIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={fourIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={oneIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={twoIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={oneIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={fiveIMG} height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
+		<div className="slide">
 			<Image src={fourIMG} height="100" width="250" alt="" />
 		</div>
 	</div>
