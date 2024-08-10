@@ -7,7 +7,7 @@ export default function ProductServices() {
   const [isHovered2, setIsHovered2] = useState(false);
 
   return (
-    <div className="w-full h-[80vh] flex flex-col items-center justify-start bg-[#0e0c15] relative top-[-10rem] gap-8 z-[100] pt-10">
+    <div className="w-full h-[100vh] flex flex-col items-center justify-start bg-[#0e0c15] relative p-10  gap-8 z-[100] pt-10">
       <div className="flex flex-col items-center w-full gap-2 justify-center">
         <h2 className="text-white text-[3rem]">Our Website Design Process</h2>
         <h5 className="text-white text-2xl">
