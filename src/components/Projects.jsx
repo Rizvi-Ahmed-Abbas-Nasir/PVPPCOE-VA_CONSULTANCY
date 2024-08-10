@@ -7,7 +7,7 @@ export default function Projects() {
   const projects = [
     {
       src: "/images/temp2back.png",
-      title: "Project 1",
+      title: "SalahCar",
       src2:"/images/tem2.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
     },
@@ -32,10 +32,6 @@ export default function Projects() {
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
 
     },
-   
-   
-    
-
   ];
 
   return (

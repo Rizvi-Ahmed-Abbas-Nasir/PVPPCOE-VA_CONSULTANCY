@@ -267,7 +267,7 @@
   height: 100%;
   opacity: 0;
   right: 0%;
-  transform: rotateY(-180deg);
+  transform: rotateY(-90deg);
   transition: all ease 1s;
   z-index: 3;
 }
