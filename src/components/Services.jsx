@@ -25,7 +25,7 @@ export default function Services() {
           <Image
           src={"/images/sample_project1.webp"}
           alt="rectangle"
-          className="image1p4"
+          className="image1p4 object-cover"
           height={100}
           width={100}
         />
@@ -34,7 +34,7 @@ export default function Services() {
           <Image
           src={"/images/sample_project1.webp"}
           alt="rectangle"
-          className="image1p4"
+          className="image1p4 object-cover"
           height={1000}
           width={1000}
         />
@@ -43,7 +43,7 @@ export default function Services() {
           <Image
           src={"/images/sample_project1.webp"}
           alt="rectangle"
-          className="image1p4"
+          className="image1p4 object-cover"
           height={1000}
           width={1000}
         />
@@ -52,7 +52,7 @@ export default function Services() {
           <Image
           src={'/images/sample_project1.webp'}
           alt="rectangle"
-          className="image1p4"
+          className="image1p4 object-cover"
           height={1000}
           width={1000}
         />
@@ -61,7 +61,7 @@ export default function Services() {
           <Image
           src={"/images/sample_project1.webp"}
           alt="rectangle"
-          className="image1p4"
+          className="image1p4 object-cover"
           height={1000}
           width={1000}
         />
