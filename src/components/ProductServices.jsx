@@ -9,7 +9,7 @@ export default function ProductServices() {
   return (
     <div className="w-full h-[100vh] flex flex-col items-center justify-start bg-[#0e0c15] relative p-10  gap-8 z-[100] pt-10">
       <div className="flex flex-col items-center w-full gap-2 justify-center">
-        <h2 className="text-white text-[3rem]">Our Website Design Process</h2>
+        <h2 className=" text-[3rem] text-cyan-300 ">Our Website Design Process</h2>
         <h5 className="text-white text-2xl">
           How to create a website tailored to your unique business goals?
         </h5>
