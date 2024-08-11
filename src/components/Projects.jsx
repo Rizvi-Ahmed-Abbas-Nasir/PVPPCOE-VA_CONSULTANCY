@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 import { GoChevronRight } from "react-icons/go";
@@ -26,7 +27,6 @@ useGSAP(
           
           scrollTrigger: { 
             trigger: ".abcd2",
-            
             scrub:3,
             end:"100% 50%",
            
