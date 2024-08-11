@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,7 +19,26 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add form submission logic here
-    console.log("Form data submitted:", formData);
+try {
+  emailjs
+    .sendForm('service_d5hpehs', 'template_8rhgy8r', '#form','z8Dw4X9gamLOG7blh',
+    )
+    
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        alert('EMAIL Sent')
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        alert("error: "+error.text)
+      },
+    );
+  console.log("Form data submitted:", formData);
+
+} catch (e) {
+  console.log(e)
+}
   };
 
   return (
@@ -33,7 +53,7 @@ export default function ContactPage() {
           </h1>
         </section>
         <section className="max-w-4xl mx-5 mb-12 mt-20">
-          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 shadow-lg  text-black">
+          <form onSubmit={handleSubmit} id="form" className="space-y-6 bg-white p-8 shadow-lg  text-black">
             <h1 className="text-2xl font-semibold mb-4">Let’s Grow Your Brand Online</h1>
             <h2 className="text-xl font-medium mb-6">Start a conversation with us</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
