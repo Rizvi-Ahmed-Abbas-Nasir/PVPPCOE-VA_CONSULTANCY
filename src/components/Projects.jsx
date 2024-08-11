@@ -50,7 +50,6 @@ useGSAP(
           
           scrollTrigger: { 
             trigger: ".abcd2",
-            
             scrub:3,
             end:"100% 50%",
            
