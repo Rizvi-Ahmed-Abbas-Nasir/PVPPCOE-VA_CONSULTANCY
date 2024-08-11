@@ -2,10 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import OnScrollAnimation from "./OnScrollAnimmation";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +17,26 @@ const abcd = "bg-[#0e0c15]";
 export default function AboutUs() {
  
   const container = useRef();
+  //On Scroll Animation Function
+  useEffect(() => {
+		if (typeof document !== 'undefined') {
+			// will run in client's browser only
+			var hiddenElements1 = document.querySelectorAll(".hidden3");
+			var hiddenElements = document.querySelectorAll(".hidden2");
+			var hiddenElement2 = document.querySelectorAll(".hidden1");
+			var hiddenElement3 = document.querySelectorAll(".hidden4");
+	
+			//   var hiddenElement2 = document.querySelectorAll(".hidden3");
+			// console.log(hiddenElements);
+			OnScrollAnimation(hiddenElements1)
+			OnScrollAnimation(hiddenElements)
+			OnScrollAnimation(hiddenElement2)
+			OnScrollAnimation(hiddenElement3)
+	
+			//    OnScrollAnimation(hiddenElement2)
+		}
+       
+    }, []);
   
   useGSAP(
       () => {
@@ -41,11 +62,11 @@ export default function AboutUs() {
 
 
   return (
-    <div className="h-screen flex flex-col md:flex-row  bg-[#00042a] w-full relative " ref={container}>
+    <div className=" h-[120vh] md:h-screen xl:h-screen flex flex-col md:flex-row  bg-[#00042a] w-full relative " ref={container}>
        <div className="circles" id="cir1"></div>
          
          
-      <section className="abcd2 flex-1 flex flex-col justify-center z-4 items-start p-8 md:p-12 text-white">
+      <section className="abcd2 flex-1 flex flex-col justify-center z-4 items-start p-8 md:p-12 text-white hidden2">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
           Creative Web Agency Delivering Custom Solutions
         </h1>
@@ -79,7 +100,7 @@ export default function AboutUs() {
           </li>
         </ul>
       </section>
-      <section className="flex-1 flex justify-center items-center p-8 md:p-12 z-4">
+      <section className="flex-1 flex justify-center items-center p-8 md:p-12 z-4 hidden4">
         <Image
           src="/images/solutions.webp"
           width={600}

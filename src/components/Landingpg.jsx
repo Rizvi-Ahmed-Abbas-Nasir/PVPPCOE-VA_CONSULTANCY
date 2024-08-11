@@ -7,7 +7,9 @@ import fiveIMG from "../Assets/IMG/7.png"
 import sixIMG from "../Assets/IMG/6.png"
 import sevenIMG from "../Assets/IMG/8.png"
 import Image from "next/image";
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
+import OnScrollAnimation from "@/components/OnScrollAnimmation";
+
 
 export default function Landing(){
   const videoRef = useRef(null);
@@ -18,6 +20,27 @@ export default function Landing(){
       videoRef.current.playbackRate = 0.8;
     }  }
 
+	//On Scroll Animation Function
+    useEffect(() => {
+		if (typeof document !== 'undefined') {
+			// will run in client's browser only
+			var hiddenElements1 = document.querySelectorAll(".hidden3");
+			var hiddenElements = document.querySelectorAll(".hidden2");
+			var hiddenElement2 = document.querySelectorAll(".hidden1");
+			var hiddenElement3 = document.querySelectorAll(".hidden4");
+	
+			//   var hiddenElement2 = document.querySelectorAll(".hidden3");
+			// console.log(hiddenElements);
+			OnScrollAnimation(hiddenElements1)
+			OnScrollAnimation(hiddenElements)
+			OnScrollAnimation(hiddenElement2)
+			OnScrollAnimation(hiddenElement3)
+	
+			//    OnScrollAnimation(hiddenElement2)
+		}
+       
+    }, []);
+   
   
 
     return(
@@ -27,12 +50,12 @@ export default function Landing(){
         <source src="/_next-video/bg.mp4" type="video/mp4" />
       </video>
       <div className='overlay'></div>
-      <div className='text'>
-        <h2 className="text-[0.8rem] md:text-[1.2rem] lg:text-[3rem] xl:text-[4.7rem]">PVPPCOE CONSULTANCY</h2>
-        <h3  className="text-[0.6rem] md:text-[1.1rem] lg:text-[2rem] xl:text-[3.7rem]">VASANTDATA PATIL</h3>
-        <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem]">Welcome to VPPCOE Consultancy, where innovation meets expertise! We are a team of skilled students with diverse backgrounds in software development, design, and digital strategy.</p>
-        <div>
-        <a href='/contact-us'>Contact us</a>
+      <div className='text '>
+        <h2 className="text-[0.8rem] md:text-[1.2rem] lg:text-[3rem] xl:text-[4.7rem] hidden2">PVPPCOE CONSULTANCY</h2>
+        <h3  className="text-[0.6rem] md:text-[1.1rem] lg:text-[2rem] xl:text-[3.7rem] hidden2">VASANTDATA PATIL</h3>
+        <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem] hidden2">Welcome to VPPCOE Consultancy, where innovation meets expertise! We are a team of skilled students with diverse backgrounds in software development, design, and digital strategy.</p>
+        <div className="hidden2">
+        <a href='/contact-us hidden2'>Contact us</a>
         </div>
 		{/* <div className='Search'>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
