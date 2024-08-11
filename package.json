@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@gsap/react": "^2.1.1",
     "@remixicon/react": "^4.2.0",
+    "@studio-freight/react-lenis": "^0.0.47",
+    "lenis": "^1.1.9",
     "next": "14.2.5",
     "pvppcoe-consultancy": "file:",
     "react": "^18",

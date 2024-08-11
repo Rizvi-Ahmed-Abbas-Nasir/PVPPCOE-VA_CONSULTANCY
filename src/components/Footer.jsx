@@ -63,23 +63,23 @@ const contactText = [
 const contactLinks = [
   {
     href: "#",
-    children: `©${year} All rights reserved`
+    children: ` ©${year} All rights reserved `,
   },
   {
     href: "mailto:consultancy@pvppcoe.ac.in",
-    children: "consultancy@pvppcoe.ac.in",
+    children : "consultancy@pvppcoe.ac.in",
   },
   {
     href: "/privacy-policy",
-    children: "Privacy Policy",
+    children : "Privacy Policy",
   },
   {
     href: "tel:919834118161",
-    children: "(91) 9834118161",
+    children : "(91) 9834118161",
   },
   {
     href: "tel:9372603618",
-    children: "(91) 9372603618",
+    children : "(91) 9372603618",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Footer() {
           className="mb-6"
         />
         <h1 className="text-3xl md:text-6xl font-bold p-4 md:p-6 text-center">
-          Let's Grow Your Brand
+          Lets Grow Your Brand
         </h1>
       </div>
 

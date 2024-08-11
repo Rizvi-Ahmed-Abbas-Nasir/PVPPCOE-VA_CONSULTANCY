@@ -3,7 +3,39 @@ import { FaLocationArrow } from "react-icons/fa";
 import { GoChevronRight } from "react-icons/go";
 import Temp from "../Assets/IMG/tem1.png"
 import Link from "next/link";
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Projects() {
+
+//animation
+const container = useRef();
+  
+useGSAP(
+    () => {
+        // gsap code here...
+        gsap.to('.scaleanimation', { 
+          scale:1.1,
+          
+          
+          stagger:0.3,
+          
+          scrollTrigger: { 
+            trigger: ".abcd2",
+            
+            scrub:3,
+            end:"100% 50%",
+           
+        }, 
+        }); // <-- automatically reverted
+    },
+    { scope: container }
+);
+
   // Define the project objects
   const projects = [
     {
@@ -11,14 +43,14 @@ export default function Projects() {
       title: "SalahCar",
       src2:"/images/tem2.png",
       desc:"Unleashing Your Automotive Adventure",
-      link:"http://www.google.com"
+      link:"https://thesalahcar.com/"
     },
     {
       src: "/images/temp6back.png",
       title: "Engineering Paathshala",
       src2:"/images/tem6.png",
       desc:"All In One Student Resource",
-      link:"http://www.google.com"
+      link:"https://www.engineeringpaathshala.com/"
 
     },
     {
@@ -34,36 +66,36 @@ export default function Projects() {
       title: "Project 4",
       src2:"/images/tem5.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
-      link:"http://www.google.com"
+      link:"https://silaaiwale.netlify.app/"
     },
     {
-      src: "/images/temp5back.png",
+      src: "/images/projects/temp7back.png",
       title: "Project 5",
       src2:"/images/tem5.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
-      link:"http://www.google.com"
+      link:"https://websangeet.netlify.app/"
     },
     {
-      src: "/images/temp5back.png",
+      src: "/images/projects/girlcomputer.png",
       title: "Project 6",
-      src2:"/images/tem5.png",
+      src2:"/images/tem4.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
-      link:"http://www.google.com"
+      link:"https://achievemap.vercel.app"
     },
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#00042a] w-full text-white p-8 pb-40 ">
-      <section className="flex justify-center items-center flex-col space-y-3 mb-8 gap-2">
-        <h2 className="text-[4rem] font-bold">OUR WORK</h2>
-        <h1 className="text-[3rem] text-cyan-300  text-center">
+    <div className=" min-h-screen flex flex-col items-center bg-[#00042a] w-full text-white p-8 pb-40 " ref={container}>
+      <section className="abcd2 flex justify-center items-center flex-col space-y-3 mb-8 gap-2">
+        <h2 className="scaleanimation text-[4rem] font-bold">OUR WORK</h2>
+        <h1 className="scaleanimation text-[3rem] text-cyan-300  text-center">
           Featured Website Design Projects
         </h1>
         <div className="flex justify-center items-center flex-col gap-3">
-          <p className="text-[1.2rem] ">
+          <p className="scaleanimation text-[1.2rem] ">
             Custom B2C, B2B and eCommerce solutions
           </p>
-          <p className="text-[1rem] text-center">
+          <p className="scaleanimation text-[1rem] text-center">
             optimized for traffic, engagement and conversion.
           </p>
         </div>
