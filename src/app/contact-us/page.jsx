@@ -23,7 +23,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="h-full bg-gradient-to-b from-blue-900 to-indigo-900 text-white flex flex-col md:flex-row items-start py-10">
+      <div className="h-screen bg-gradient-to-b from-blue-900 to-indigo-900 text-white flex flex-col md:flex-row items-start py-10">
         <section className="max-w-3xl text-start mb-12 mx-5 px-20 mt-20 ">
           <p className="text-xl leading-relaxed">
             TAKE THE ROAD TO

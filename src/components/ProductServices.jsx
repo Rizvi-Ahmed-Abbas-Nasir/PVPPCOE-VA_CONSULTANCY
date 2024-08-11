@@ -7,7 +7,7 @@ export default function ProductServices() {
   const [isHovered2, setIsHovered2] = useState(false);
 
   return (
-    <div className="w-full h-[100vh] flex flex-col items-center justify-start bg-[#0e0c15] relative p-10  gap-8 z-[100] pt-10">
+    <div className="w-full h-[100vh] flex flex-col items-center justify-start bg-[#0e0c15] relative py-10  gap-8 z-[100] pt-10">
       <div className="flex flex-col items-center w-full gap-2 justify-center">
         <h2 className=" text-[3rem] text-cyan-300 ">Our Website Design Process</h2>
         <h5 className="text-white text-2xl">
@@ -21,7 +21,7 @@ export default function ProductServices() {
         </h4>
       </div>
       <div
-        className={`w-[95%] rounded-xl h-[100%] relative CardProduct ${
+        className={`w-full  h-[100%] relative CardProduct ${
           isHovered ? "bg-img-hover" : "bg-img-default"
         }  ${isHovered2 ? "bg-img-hover2" : "bg-img-default"}
          ${isHovered1 ? "bg-img-hover1" : "bg-img-default"}`}

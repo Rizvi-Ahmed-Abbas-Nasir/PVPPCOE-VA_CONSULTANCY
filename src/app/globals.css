@@ -564,6 +564,8 @@ width: 300px;
 
 .Cardone:hover {
   content: "";
+  width: 34%;
+  height: 100%;
   background-color: rgba(10, 10, 10, 0.7); /* Light color with 50% transparency */
   transition: 500ms;
 } 

@@ -1,86 +1,140 @@
 "use client";
 import Image from "next/image";
 import Logo from "../Assets/IMG/Logo.png";
+import Link from "next/link";
 
-export default function Footer() {
-  return (
-    <div>
-      <div className="flex bg-gradient-to-b from-gray-800 to-gray-900 flex-col md:px-20 py-10">
-        <h1 className="text-3xl font-bold text-white p-4 md:p-6 md:text-6xl">Let's Grow Your Brand</h1>
+let date = new Date();
+const year = date.getFullYear();
 
-        <div className="flex flex-row flex-wrap">
-          {services.map((service, index) => (
-            <div key={index} className="text-white p-5 px-6">
-              <ul className="border-l px-8">
-                <p className="text-2xl md:text-3xl font-semibold pb-5">{service.title}</p>
-                {service.items.map((item, idx) => (
-                  <li key={idx} className="pb-2 text-slate-100 font-light hover:text-sky-300 cursor-pointer">{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex items-center mt-6">
-          <h1 className="text-4xl font-bold text-white p-6">PVPPCOE Consultancy</h1>
-          <div className="flex-grow border-t border-gray-300"></div>
-        </div>
-
-        <div className="flex flex-row flex-wrap text-white mt-4">
-          {contacts.map((contact, index) => (
-            <p key={index} className="px-8 text-slate-100 font-light">{contact}</p>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 const services = [
   {
     title: "Main Services",
     items: [
       "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
+      "Custom App Design",
+      "Custom Web Development",
+      "Custom App Development",
+      "Custom Software Development",
+    ],
+    links: [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
     ],
   },
   {
-    title: "Main Services",
+    title: "Other Services",
     items: [
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
+      "eCommerce Design",
+      "Shopify Website Design",
+      "WordPress Web Design",
+      "eCommerce Development",
+    ],
+    links: [
+      "#",
+      "#",
+      "#",
+      "#",
     ],
   },
   {
-    title: "Main Services",
+    title: "Location",
     items: [
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
+      "Vasantdada Patil Educational Complex, Eastern Express Highway, Padmabhushan Vasantdada Patil Marg, Sion Mumbai 400022.",
     ],
+    links: ["https://maps.apple.com/?address=Padmabhusan%20Vasantdada%20Patil%20Road,%20Chuna%20Bhatti,%20Mumbai,%20400022,%20Maharashtra,%20India&auid=10587837214898840279&ll=19.050103,72.878241&lsp=9902&q=Vasantdada%20Patil%20Pratishthans%20Manohar%20Phalke%20College%20of%20Architecture"],
   },
   {
-    title: "Main Services",
-    items: [
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-      "Custom Web Design",
-    ],
+    title: "Company",
+    items: ["About us", "Our Work", "Contact us"],
+    links: ["/about-us", "/our-work", "/contact-us"],
   },
 ];
 
-const contacts = [
-  "@pvppcoe.ac.in",
-  "@pvppcoe.ac.in",
-  "@pvppcoe.ac.in",
-  "@pvppcoe.ac.in",
+const contactText = [
+  ,
+  ,
+  "",
+  "Call us at (91) 9834118161 9372603618",
 ];
+
+const contactLinks = [
+  {
+    href: "#",
+    children: `©${year} All rights reserved`
+  },
+  {
+    href: "mailto:consultancy@pvppcoe.ac.in",
+    children: "consultancy@pvppcoe.ac.in",
+  },
+  {
+    href: "/privacy-policy",
+    children: "Privacy Policy",
+  },
+  {
+    href: "tel:919834118161",
+    children: "(91) 9834118161",
+  },
+  {
+    href: "tel:9372603618",
+    children: "(91) 9372603618",
+  },
+];
+
+export default function Footer() {
+  return (
+    <footer className="bg-gradient-to-b from-cyan-600 to-cyan-900 text-white py-10 md:px-20">
+      <div className="flex flex-col items-center">
+        <Image
+          src={Logo}
+          alt="Company Logo"
+          width={150}
+          height={150}
+          className="mb-6"
+        />
+        <h1 className="text-3xl md:text-6xl font-bold p-4 md:p-6 text-center">
+          Let's Grow Your Brand
+        </h1>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+        {services.map((service, index) => (
+          <div key={index} className="p-5 px-6 text-center">
+            <ul className="border-l-4 pl-8">
+              <p className="text-2xl md:text-3xl font-semibold pb-5">
+                {service.title}
+              </p>
+              {service.items.map((item, idx) => (
+                <li key={idx}>
+                  <Link
+                    href={service.links[idx]}
+                    className="pb-2 text-slate-100 font-light hover:text-sky-300 cursor-pointer"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex items-center justify-center mt-6">
+        <h1 className="text-4xl font-bold p-6 text-center">
+          PVPPCOE Consultancy
+        </h1>
+        <div className="w-full max-w-xs border-t border-gray-300"></div>
+      </div>
+
+      <div className="flex flex-wrap justify-center mt-4 text-center">
+        {contactLinks.map((contact, index) => (
+          <Link key={index} href={contact.href} className="px-8 text-slate-100 font-light hover:text-sky-300">
+            {contact.children}
+          </Link>
+        ))}
+      </div>
+    </footer>
+  );
+}

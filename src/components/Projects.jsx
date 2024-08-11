@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 import { GoChevronRight } from "react-icons/go";
 import Temp from "../Assets/IMG/tem1.png"
+import Link from "next/link";
 export default function Projects() {
   // Define the project objects
   const projects = [
@@ -9,13 +10,15 @@ export default function Projects() {
       src: "/images/temp2back.png",
       title: "SalahCar",
       src2:"/images/tem2.png",
-      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+      desc:"Unleashing Your Automotive Adventure",
+      link:"http://www.google.com"
     },
     {
       src: "/images/temp6back.png",
-      title: "Project 2",
+      title: "Engineering Paathshala",
       src2:"/images/tem6.png",
-      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+      desc:"All In One Student Resource",
+      link:"http://www.google.com"
 
     },
     {
@@ -23,14 +26,29 @@ export default function Projects() {
       title: "Project 3",
       src2:"/images/tem3.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+      link:"http://www.google.com"
 
     },
     {
       src: "/images/temp5back.png",
-      title: "Project 3",
+      title: "Project 4",
       src2:"/images/tem5.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
-
+      link:"http://www.google.com"
+    },
+    {
+      src: "/images/temp5back.png",
+      title: "Project 5",
+      src2:"/images/tem5.png",
+      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+      link:"http://www.google.com"
+    },
+    {
+      src: "/images/temp5back.png",
+      title: "Project 6",
+      src2:"/images/tem5.png",
+      desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
+      link:"http://www.google.com"
     },
   ];
 
@@ -76,9 +94,10 @@ export default function Projects() {
             </h3>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" >Featured Website Design</h2>
               <p> {project.desc} </p>
-              <h4 className="flex ">LAUNCH THE WEBSITE 
-              <GoChevronRight className="sideicon"/>
-              </h4>
+              <Link href={project.link} target="_blank">
+              <h2 className="flex flex-row justify-center items-center">LAUNCH THE WEBSITE <GoChevronRight className="sideicon"/>
+              </h2>
+              </Link>
             </div>
           </div>
         ))}

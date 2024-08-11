@@ -56,13 +56,15 @@ export default function Header() {
               About us
             </Link>
             <Link href={'/contact-us'} className="cursor-pointer hover:text-white">Contact us</Link>
-            <li className="cursor-pointer hover:text-white">CONSULTANCY</li>
+            <Link href={'/our-work'} className="cursor-pointer hover:text-white">Our Work</Link>
           </ul>
         </div>
         <div className="text-n-1 contactOnHover lg:inline-flex hidden cursor-pointer  rounded-md text-xs  w-[7rem] border-[3px] button relative  items-center justify-center h-11 transition-colors hover:text-color-1  ">
+          <Link href={'/contact-us'}>
           <button>
             <h3 className="uppercase">Contact Us</h3>
           </button>
+          </Link>
         </div>
         <div
           className="HamBurgerIcon lg:hidden flex justify-center h-[8vh]  items-center w-[4rem] rounded-2xl xl:hidden border-[2px]"

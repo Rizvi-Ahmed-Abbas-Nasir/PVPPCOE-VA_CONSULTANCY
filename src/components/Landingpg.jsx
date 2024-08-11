@@ -30,11 +30,11 @@ export default function Landing(){
       <div className='text'>
         <h2 className="text-[0.8rem] md:text-[1.2rem] lg:text-[3rem] xl:text-[4.7rem]">PVPPCOE CONSULTANCY</h2>
         <h3  className="text-[0.6rem] md:text-[1.1rem] lg:text-[2rem] xl:text-[3.7rem]">VASANTDATA PATIL</h3>
-        <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem]">The need for using alternative fuel for mobility is higher than ever before. EVs are one such option as such vehicles produce zero-emission.</p>
+        <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem]">Welcome to VPPCOE Consultancy, where innovation meets expertise! We are a team of skilled students with diverse backgrounds in software development, design, and digital strategy.</p>
         <div>
-        <a href='#'>Contact us</a>
+        <a href='/contact-us'>Contact us</a>
         </div>
-		<div className='Search'>
+		{/* <div className='Search'>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 		<div class="box">
 			<div class="container-2">
@@ -42,7 +42,7 @@ export default function Landing(){
 		<input type="search" id="search" placeholder="Search..." />
 		</div>
 		</div>
-    </div>
+    </div> */}
       </div>
      
       </div>
