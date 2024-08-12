@@ -1,17 +1,40 @@
 "use client";
+
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 import { GoChevronRight } from "react-icons/go";
 import Temp from "../Assets/IMG/tem1.png"
 import Link from "next/link";
-import { useRef } from 'react';
+import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import OnScrollAnimation from "./OnScrollAnimmation";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
+
+  //On Scroll Animation Function
+  useEffect(() => {
+		if (typeof document !== 'undefined') {
+			// will run in client's browser only
+			var hiddenElements1 = document.querySelectorAll(".hidden3");
+			var hiddenElements = document.querySelectorAll(".hidden2");
+			var hiddenElement2 = document.querySelectorAll(".hidden1");
+			var hiddenElement3 = document.querySelectorAll(".hidden4");
+	
+			//   var hiddenElement2 = document.querySelectorAll(".hidden3");
+			// console.log(hiddenElements);
+			OnScrollAnimation(hiddenElements1)
+			OnScrollAnimation(hiddenElements)
+			OnScrollAnimation(hiddenElement2)
+			OnScrollAnimation(hiddenElement3)
+	
+			//    OnScrollAnimation(hiddenElement2)
+		}
+       
+    }, []);
 
 //animation
 const container = useRef();
@@ -86,23 +109,23 @@ useGSAP(
 
   return (
     <div className=" min-h-screen flex flex-col items-center bg-[#00042a] w-full text-white p-8 pb-40 " ref={container}>
-      <section className="abcd2 flex justify-center items-center flex-col space-y-3 mb-8 gap-2">
-        <h2 className="scaleanimation text-[4rem] font-bold">OUR WORK</h2>
-        <h1 className="scaleanimation text-[3rem] text-cyan-300  text-center">
+      <section className="abcd2 flex justify-center items-center flex-col space-y-3 mb-8 gap-2 hidden1">
+        <h2 className="scaleanimation  text-[2rem] md:text-[3rem] xl:text-[4rem] font-bold">OUR WORK</h2>
+        <h1 className="scaleanimation  text-[1.6rem] md:text-[2] xl:text-[3rem] text-cyan-300  text-center">
           Featured Website Design Projects
         </h1>
         <div className="flex justify-center items-center flex-col gap-3">
-          <p className="scaleanimation text-[1.2rem] ">
+          <p className="scaleanimation text-[0.8rem] xl:text-[1.2rem] ">
             Custom B2C, B2B and eCommerce solutions
           </p>
-          <p className="scaleanimation text-[1rem] text-center">
+          <p className="scaleanimation text-[0.9rem] xl:text-[1rem] text-center">
             optimized for traffic, engagement and conversion.
           </p>
         </div>
       </section>
       <section className="flex flex-wrap justify-center w-full">
         {projects.map((project, index) => (
-          <div key={index} className="contentimg relative  w-full md:w-1/2 p-2 rounded-xl" >
+          <div key={index} className="contentimg relative  w-full md:w-1/2 p-2 rounded-xl hidden3"  >
             <Image
               src={project.src}
               alt={project.title}

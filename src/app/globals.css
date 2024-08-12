@@ -8,7 +8,96 @@ body{
   background-color: #000125;
 }
 
+.RoundedCard:hover{
+  box-shadow: #000000;
+  transform: rotatez(10deg);
+  transition:all 500ms;
+
+}
+.RoundedCard{
+  transition:all 2s;
+
+}
+
+/* OnScroll Animation  */
+.hidden1{
+  opacity:0;
+  /* filter:blur(5px); */
+  transform:translateY(50px);
+  transition:all 2s;
+}
+.hidden2{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform: translateX(-50%);
+    transition:all 1s;
+  }
+
+.hidden3{
+  opacity:0;
+  /* filter:blur(5px); */
+  transform: translateX(-100%);
+  transition:all 1s;
+  }
+  .hidden4{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform: translateX(-150%);
+    transition:all 1s;
+    }
+  
+
+.show{
+opacity:1;
+filter:blur(0);
+transform:translateY(0px);
+}
+
+.showleftSlider{
+
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0%);
+
+}
+
+.rightSlider{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0px);
+
+}
+/* ## */
+
 /* Animations */
+
+/* @keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  border-right-color: transparent;
+  animation: loader-rotate 1s linear infinite;
+} */
+
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 @keyframes fade-down {
   0%{
@@ -157,7 +246,7 @@ body{
   color: #fff;
   margin-top: 130px;
   text-transform: uppercase;
-  
+
 }
 .text h3
 {
@@ -628,4 +717,133 @@ width: 300px;
 }
 .bg-img-hover2 {
   background-image: url("../Assets/IMG/3d.png"); /* Hover background image */
+}
+
+/* responsive */
+
+@media screen and (max-width: 1250px) {
+
+  .Cardone:hover {
+    content: "";
+    width: 40rem;
+    height: 100%;
+  } 
+}
+
+@media screen and (max-width: 990px) {
+
+  .Cardone:hover {
+    content: "";
+    width: 100%;
+    height: 30rem;
+  } 
+  .text
+  {
+    gap: 0rem;
+  
+  }
+  
+    .text h2
+    {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 120px;
+      text-transform: uppercase;
+    
+    }
+    .text h3
+    {
+      font-size: 2em;
+    
+    }
+    .text p
+    {
+      font-size: 1rem;
+      color: #fff;
+      /* margin: 25px 0; */
+      font-weight: 400;
+      max-width: 700px;
+    }
+    .text a
+    {
+      display: inline-block;
+      font-size: 1em;
+      background: #fff;
+      padding: 5px 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .HomePage{
+      display:flex;
+      padding-left:2rem ;
+      padding-right: 1rem;
+  
+    }
+    
+  
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+  /* .CardProduct{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+
+  .Cardone:hover {
+    content: "";
+    width: 100%;
+    height: 30rem;
+  } 
+
+  .text
+{
+  gap: 0rem;
+
+}
+
+  .text h2
+  {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 120px;
+    text-transform: uppercase;
+  
+  }
+  .text h3
+  {
+    font-size: 1.5em;
+  
+  }
+  .text p
+  {
+    font-size: 0.8rem;
+    color: #fff;
+    /* margin: 25px 0; */
+    font-weight: 400;
+    max-width: 700px;
+  }
+  .text a
+  {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .HomePage{
+    display:flex;
+    padding-left:2rem ;
+    padding-right: 1rem;
+
+  }
+  
+
+
 }
