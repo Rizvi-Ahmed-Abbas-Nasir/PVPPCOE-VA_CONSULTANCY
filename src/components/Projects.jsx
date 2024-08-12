@@ -78,7 +78,7 @@ useGSAP(
     {
       src: "/images/projects/girlcomputer.png",
       title: "Project 6",
-      src2:"/images/tem4.png",
+      src2:"/images/projects/tem4.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
       link:"https://achievemap.vercel.app"
     },
