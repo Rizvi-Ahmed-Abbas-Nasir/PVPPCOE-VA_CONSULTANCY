@@ -74,27 +74,24 @@ const contactLinks = [
     children : "Privacy Policy",
   },
   {
-    href: "tel:919834118161",
-    children : "(91) 9834118161",
+    href: "tel:7738282824",
+    children : "(91) 7738282824",
   },
-  {
-    href: "tel:9372603618",
-    children : "(91) 9372603618",
-  },
+ 
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-cyan-600 to-cyan-900 text-white py-10 md:px-20">
+    <footer className="bg-gradient-to-b from-darkblue-600 to-cyan-900 text-white py-10 md:px-20">
       <div className="flex flex-col items-center">
         <Image
           src={Logo}
           alt="Company Logo"
           width={150}
           height={150}
-          className="mb-6"
+          className="mb-6 teamshow"
         />
-        <h1 className="text-3xl md:text-6xl font-bold p-4 md:p-6 text-center">
+        <h1 className="text-3xl md:text-6xl font-bold p-4 md:p-6 text-center teamshow">
           Lets Grow Your Brand
         </h1>
       </div>
@@ -103,14 +100,14 @@ export default function Footer() {
         {services.map((service, index) => (
           <div key={index} className="p-5 px-6 text-center">
             <ul className="border-l-4 pl-8">
-              <p className="text-2xl md:text-3xl font-semibold pb-5">
+              <p className="text-2xl md:text-3xl font-semibold pb-5 teamshow">
                 {service.title}
               </p>
               {service.items.map((item, idx) => (
                 <li key={idx}>
                   <Link
                     href={service.links[idx]}
-                    className="pb-2 text-slate-100 font-light hover:text-sky-300 cursor-pointer"
+                    className="pb-2 text-slate-100 font-light hover:text-sky-300 cursor-pointer teamshow"
                   >
                     {item}
                   </Link>
@@ -122,7 +119,7 @@ export default function Footer() {
       </div>
 
       <div className="flex items-center justify-center mt-6">
-        <h1 className="text-4xl font-bold p-6 text-center">
+        <h1 className="text-4xl font-bold p-6 text-center teamshow">
           PVPPCOE Consultancy
         </h1>
         <div className="w-full max-w-xs border-t border-gray-300"></div>

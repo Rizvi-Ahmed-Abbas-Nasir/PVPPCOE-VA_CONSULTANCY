@@ -26,10 +26,10 @@ export default function Page() {
     }, []);
   // Array of team members
   const teamMembers = [
-    { name: "John Doe", position: "CEO & Founder" },
-    { name: "Jane Smith", position: "CTO" },
-    { name: "Alice Johnson", position: "VP of Client Relations" },
-    { name: "Michael Brown", position: "Lead Designer" },
+    { name: "Pranav Molawade", position: "Software Developer" },
+    { name: "Rizvi Abbas", position: "Android Developer" },
+    { name: "Santosh Allu", position: "Frontend Developer" },
+    { name: "Satyam Bhambid", position: "Backend Developer" },
     // Add more team members as needed
   ];
 
@@ -86,7 +86,7 @@ export default function Page() {
           <h2 className="text-3xl font-bold mb-6">Our Expertise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  ">
             {expertiseAreas.map((expertise, index) => (
-              <div key={index} className="bg-gray-800 p-6 rounded-lg hidden3 hover:shadow-lg cursor-pointer RoundedCard ">
+              <div key={index} className="bg-gray-800 p-6 rounded-lg hidden3 hover:shadow-lg cursor-pointer RoundedCard teamshow">
                 <h3 className="text-2xl font-semibold mb-4">
                   {expertise.title}
                 </h3>
@@ -105,12 +105,10 @@ export default function Page() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="w-24 h-24 rounded-full bg-gray-700 mb-4 flex justify-center items-center">
-                  Avatar
-                </div>
-                <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-sm">{member.position}</p>
+              <div key={index} className="flex flex-col items-center ">
+                
+                <h3 className="text-xl font-semibold ">{member.name}</h3>
+                <p className="text-sm teamshow">{member.position}</p>
               </div>
             ))}
           </div>
