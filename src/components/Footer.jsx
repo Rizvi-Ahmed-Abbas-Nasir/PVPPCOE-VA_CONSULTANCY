@@ -85,7 +85,9 @@ const contactLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-cyan-600 to-cyan-900 text-white py-10 md:px-20">
+    <div className="px-5">
+      <hr />
+    <footer className="bg-gradient-to-b  text-white py-10 md:px-20 ">
       <div className="flex flex-col items-center">
         <Image
           src={Logo}
@@ -136,5 +138,6 @@ export default function Footer() {
         ))}
       </div>
     </footer>
+    </div>
   );
 }

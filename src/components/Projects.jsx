@@ -73,7 +73,7 @@ useGSAP(
       title: "Engineering Paathshala",
       src2:"/images/tem6.png",
       desc:"All In One Student Resource",
-      link:"https://www.engineeringpaathshala.com/"
+      link:""
 
     },
     {
