@@ -32,7 +32,7 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed Header  header-section top-0 flex justify-center left-0 w-full z-50  border-b border-n-7  lg:backdrop-blur-sm  ">
+    <div className="fixed Header w-full header-section top-0 flex justify-center left-0 w-full z-50  border-b border-n-7  lg:backdrop-blur-sm  ">
       <div className=" lg:h-[10.5vh] h-[11vh] w-full flex justify-between items-center  px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div className="flex items-center gap-2 w-[20rem]">
           <div>
