@@ -43,84 +43,97 @@ try {
 
   return (
     <>
-      <div className="h-screen bg-gradient-to-b from-blue-900 to-indigo-900 text-white flex flex-col md:flex-row items-start py-10">
-        <section className="max-w-3xl text-start mb-12 mx-5 px-20 mt-20 ">
+      <div className=" h-[300vh] xl:h-[120vh] w-full bg-gradient-to-br from-purple-700 to-blue-900  text-white flex flex-col justify-start md:justify-center  md:flex-row items-center ">
+        <div className="flex w-full xl:flex-row flex-col justify-start md:justify-center xl:items-start items-center">
+        <div className="flex justify-center">
+        <section className=" lg:max-w-3xl  flex flex-col justify-start  items-center md:items-start md:mb-12 md:mx-5 md:px-15 mt-20 ">
+          <div className="flex flex-col justify-start items-center md:items-start ">
           <p className="text-xl leading-relaxed">
             TAKE THE ROAD TO
           </p>
-          <h1 className="text-5xl font-extrabold mb-8">
+          <h1 className=" text-[1.4rem] md:text-[4rem] text-gradient-to-br from-purple-700 to-blue-900 font-extrabold mb-8">
             Digitizing Your Business Growth
           </h1>
+          </div>
+          <div className="flex gap-10 md:flex-row flex-col justify-center items-center md:w-[80%]">
+            <div className="flex flex-col border-none md:border-r pr-5"><div><h3 className=" text-[1rem] md:text-[1.2rem] font-bold">Expert</h3></div><div><p>Team Members</p></div></div>
+            <div className="flex flex-col border-none md:border-r pr-5"><div><h3 className="text-[1rem] md:text-[1.2rem] font-bold">Expert</h3></div><div><p>Team Members</p></div></div>
+            <div className="flex flex-col"><div><h3 className="md:text-[1.2rem] text-[1rem] font-bold">Expert</h3></div><div><p>Team Members</p></div></div>
+          </div>
+          <div className=" flex  mt-[5rem] ">
+            <div>   <h1 className="text-[1rem] md:text-[1.5rem]">Premium Digital Agency Recognized by</h1></div>
+           
+         
+          </div>
         </section>
-        <section className="max-w-4xl mx-5 mb-12 mt-20">
-          <form onSubmit={handleSubmit} id="form" className="space-y-6 bg-white p-8 shadow-lg  text-black">
-            <h1 className="text-2xl font-semibold mb-4">Let’s Grow Your Brand Online</h1>
-            <h2 className="text-xl font-medium mb-6">Start a conversation with us</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  Name*
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email*
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Your Message*
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                required
-                rows="4"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                value={formData.message}
-                onChange={handleChange}
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
-            >
-              Send Message
-            </button>
-          </form>
-        </section>
+        </div>
+        <div className="min-h-screen  flex items-center justify-center p-6">
+      <form className="bg-white p-10 xl:h-[55rem] shadow-md w-[20rem] h-[50rem] xl:w-[45rem] flex flex-col items-start">
+        <div className="w-full flex flex-col gap-5">
+        <div className="mb-6">
+          <h2 className=" text-[0.8rem] md:text-[1.2rem] font-bold text-blue-900">LET'S GROW YOUR BRAND ONLINE</h2>
+          <h1 className=" text-[1rem] md:text-[2.8rem] font-bold text-blue-900">Start a conversation with us</h1>
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-gray-700 text-[0.9rem] md:text-[1.2rem] font-bold mb-2" htmlFor="name">
+            <svg xmlns="http://www.w3.org/2000/svg" className="inline-block w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4a4 4 0 100 8 4 4 0 000-8zm0 8c-4.418 0-8 1.791-8 4v2h16v-2c0-2.209-3.582-4-8-4z" />
+            </svg>
+            Name*
+          </label>
+          <input className="border-b-2 w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:border-blue-500" id="name" type="text" placeholder="Enter your name" />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-gray-700  text-[0.9rem] md:text-[1.2rem] font-bold mb-2" htmlFor="company">
+            <svg xmlns="http://www.w3.org/2000/svg" className="inline-block w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h1m2 0h16m-2 0a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2-2 0 012-2zM4 6h16M4 6a2 2 0 012-2h10a2 2 0 012 2m0 0v4m0-4L12 3m0 0L4 6m8-3v4" />
+            </svg>
+            Company Name*
+          </label>
+          <input className="border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500" id="company" type="text" placeholder="Enter your company name" />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-gray-700  text-[0.9rem] md:text-[1.2rem] font-bold mb-2" htmlFor="email">
+            <svg xmlns="http://www.w3.org/2000/svg" className="inline-block w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12l-4-4-4 4m8 4v1a1 1 0 01-1 1h-4a1 1 0 01-1-1v-1m0 0l-4-4m4 4l4-4" />
+            </svg>
+            Email*
+          </label>
+          <input className="border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500" id="email" type="email" placeholder="Enter your email" />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-gray-700 text-[0.9rem] md:text-[1.2rem ] font-bold mb-2" htmlFor="phone">
+            <svg xmlns="http://www.w3.org/2000/svg" className="inline-block w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h1m2 0h16m-2 0a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2-2 0 012-2zM4 6h16M4 6a2 2 0 012-2h10a2 2 0 012 2m0 0v4m0-4L12 3m0 0L4 6m8-3v4" />
+            </svg>
+            Phone*
+          </label>
+          <input className="border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500" id="phone" type="tel" placeholder="Enter your phone number" />
+        </div>
+
+        <div className="mb-6">
+          <label className="block text-gray-700  text-[0.9rem] md:text-[1.2rem] font-bold mb-2" htmlFor="message">
+            <svg xmlns="http://www.w3.org/2000/svg" className="inline-block w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h1m2 0h16m-2 0a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2-2 0 012-2zM4 6h16M4 6a2 2 0 012-2h10a2 2 0 012 2m0 0v4m0-4L12 3m0 0L4 6m8-3v4" />
+            </svg>
+            Your Message*
+          </label>
+          <textarea className="border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+
+        <div className="flex items-center justify-center">
+          <button className="bg-transparent border-2 mt-[-2rem] border-blue-500 text-blue-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-500 hover:text-white" type="submit">
+            SUBMIT
+          </button>
+        </div>
+        </div>
+      </form>
+    </div>
+    </div>
       </div>
       <Footer />
     </>
