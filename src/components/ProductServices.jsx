@@ -65,10 +65,9 @@ export default function ProductServices() {
             </div>
             <div className="CardPara text-white w-full">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum vitae eros sit amet purus hendrerit fringilla.
-                Quisque consectetur risus nec erat suscipit, ac dignissim magna
-                facilisis.
+              Unlock your brands potential with our custom web design services,
+               tailored to meet your unique business needs.
+                Partner with us to build a website that not only looks great but performs seamlessly.
               </p>
             </div>
           </div>
@@ -81,16 +80,15 @@ export default function ProductServices() {
               <h1 className="text-[4rem] text-white">02</h1>
               <div>
                 <h1 className="text-white text-[1.5rem] font-bold">
-                  Custom Web Design & Development
+                  Android Design & Development
                 </h1>
               </div>
             </div>
             <div className="CardPara text-white w-full">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum vitae eros sit amet purus hendrerit fringilla.
-                Quisque consectetur risus nec erat suscipit, ac dignissim magna
-                facilisis.
+              Transform your ideas into powerful mobile and web applications with 
+              our custom app development services. We specialize in creating tailored solutions
+               that meet your specific business needs, ensuring a seamless user experience.
               </p>
             </div>
           </div>
@@ -103,16 +101,16 @@ export default function ProductServices() {
               <h1 className="text-[4rem] text-white">03</h1>
               <div>
                 <h1 className="text-white text-[1.5rem] font-bold">
-                  Custom Web Design & Development
+                  Software Design & Development
                 </h1>
               </div>
             </div>
             <div className="CardPara text-white w-full">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum vitae eros sit amet purus hendrerit fringilla.
-                Quisque consectetur risus nec erat suscipit, ac dignissim magna
-                facilisis.
+              Elevate your business with our custom software development services,
+               designed to streamline operations and boost efficiency.
+               Our experienced team ensures seamless integration, robust performance,
+                and scalability for future growth.
               </p>
             </div>
           </div>
