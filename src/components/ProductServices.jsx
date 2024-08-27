@@ -29,7 +29,7 @@ export default function ProductServices() {
     }, []);
 
   return (
-    <div className="w-full h-[200vh] lg:h-[100vh] xl:h-[120vh] flex flex-col items-center justify-start bg-[#000125] relative py-10  gap-8 z-[100] pt-10">
+    <div className="w-full h-[250vh] lg:h-[100vh] xl:h-[120vh] flex flex-col items-center justify-start bg-[#000125] relative py-10  gap-8 z-[100] pt-10">
       <div className="flex flex-col items-center w-full gap-2 justify-center hidden1">
         <h2 className=" text-[1.5rem] xl:text-[3rem] text-cyan-300 ">Our Website Design Process</h2>
         <h5 className="text-white text-[0.6rem] xl:text-2xl">

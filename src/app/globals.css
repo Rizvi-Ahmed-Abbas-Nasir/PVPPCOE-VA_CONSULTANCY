@@ -186,8 +186,8 @@ transform:translateY(0px);
   background-color: #161225;
   
   /* animation: 1s ease-in 500ms normal none 1 running fade-down; */
-  padding-top: 0px;
-  padding-bottom: 0px;
+  /* padding-top: 0px;
+  padding-bottom: 0px; */
   transition: 500ms;
 
 
@@ -461,6 +461,20 @@ transform:translateY(0px);
   animation: mymove 5s infinite linear;
   
 }
+
+
+
+.Sub-SideNav-on-click{
+
+  display: none;
+}
+
+.Sub-SideNav{
+  display: none;
+}
+
+
+
 #cir1{
   top:30%
 }
@@ -786,7 +800,57 @@ width: 300px;
 
 }
 
+
 @media screen and (max-width: 640px) {
+  .Sub-SideNav{
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a); /* Gradient from purple to blue */
+    z-index:30;
+    bottom:0.1em;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow:var(--showdow-box);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+  }
+  
+  
+  .Sub-SideNav-on-click{
+    display: flex;
+    z-index:30;
+    bottom:0.1em;
+    left: 0%;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #00042a, #1e3a8a); /* Gradient from purple to blue */
+    box-shadow:var(--showdow-box);
+    transition: all ease-in 500ms;
+  }
+  
+  
+  .menuItems{
+    display: flex;
+    flex-direction: column;;
+    width: 100%;
+    height: 100vh;
+    align-items: center ;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -3rem;
+    color: white;
+    
+   
+  }
+  .menuItems h4{
+    font-size: 1.6rem;
+  }
 
   /* .CardProduct{
     display:flex;
@@ -884,6 +948,10 @@ width: 300px;
   font-size: 13px;
 }
 }
+
+
+
+
 
 .ppage h4{
   color:white;
