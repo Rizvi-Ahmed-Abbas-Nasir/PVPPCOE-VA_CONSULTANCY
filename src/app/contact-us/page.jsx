@@ -68,11 +68,11 @@ try {
         </section>
         </div>
         <div className="min-h-screen  flex items-center justify-center p-6">
-      <form className="bg-white p-10 xl:h-[55rem] shadow-md w-[20rem] h-[50rem] xl:w-[45rem] flex flex-col items-start">
-        <div className="w-full flex flex-col gap-5">
+      <form className="bg-white pt-[5rem] p-15 xl:h-[55rem] shadow-md w-[20rem] h-[50rem] xl:w-[45rem] flex flex-col items-start">
+        <div className="w-full flex flex-col gap-3">
         <div className="mb-6">
           <h2 className=" text-[0.8rem] md:text-[1.2rem] font-bold text-blue-900">LET'S GROW YOUR BRAND ONLINE</h2>
-          <h1 className=" text-[1rem] md:text-[2.8rem] font-bold text-blue-900">Start a conversation with us</h1>
+          <h1 className=" text-[1rem] md:text-[2.5rem] font-bold text-blue-900">Start a conversation with us</h1>
         </div>
 
         <div className="mb-4">
@@ -125,8 +125,8 @@ try {
           <textarea className="border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500" id="message" rows="3" placeholder="Enter your message"></textarea>
         </div>
 
-        <div className="flex items-center justify-center">
-          <button className="bg-transparent border-2 mt-[-2rem] border-blue-500 text-blue-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-500 hover:text-white" type="submit">
+        <div className="flex items-center justify-start">
+          <button className="bg-transparent border-2 mt-[-2rem] border-blue-500 text-blue-500 font-bold py-5 px-6 rounded focus:outline-none focus:shadow-outline hover:bg-blue-500 hover:text-white" type="submit">
             SUBMIT
           </button>
         </div>
