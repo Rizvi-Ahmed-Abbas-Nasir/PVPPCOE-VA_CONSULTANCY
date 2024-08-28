@@ -79,7 +79,7 @@ export default function ContactPage() {
                     Digitizing Your Business Growth
                   </h1>
                 </div>
-                <div className="flex gap-2 md:flex-row   justify-center items-center md:w-[80%]">
+                <div className="flex gap-2 md:flex-row   p-5 justify-center items-center md:w-[80%]">
                   <div className="flex flex-col  md:border-r pr-5">
                     <div>
                       <h3 className=" text-[1rem] md:text-[1.2rem] font-bold">
