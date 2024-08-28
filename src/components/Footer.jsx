@@ -99,7 +99,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
         {services.map((service, index) => (
           <div key={index} className="p-5 px-6 text-center">
-            <ul className="border-l-4 pl-8">
+            <ul className="md:border-l-4 pl-8">
               <p className="text-2xl md:text-3xl font-semibold pb-5 teamshow">
                 {service.title}
               </p>
@@ -122,7 +122,7 @@ export default function Footer() {
         <h1 className="text-4xl font-bold p-6 text-center teamshow">
           PVPPCOE Consultancy
         </h1>
-        <div className="w-full max-w-xs border-t border-gray-300"></div>
+        <div className="md:w-full md:max-w-xs md:border-t md:border-gray-300"></div>
       </div>
 
       <div className="flex flex-wrap justify-center mt-4 text-center">

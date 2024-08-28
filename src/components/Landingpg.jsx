@@ -51,11 +51,11 @@ export default function Landing(){
       </video>
       <div className='overlay'></div>
       <div className='text '>
-        <h2 className="text-[0.8rem] md:text-[1.2rem] lg:text-[3rem] xl:text-[4.7rem] hidden2">PVPPCOE CONSULTANCY</h2>
+        <h2 className="text-[0.8rem] md:text-[1.2rem] lg:text-[3rem] xl:text-[4.7rem] hidden2">VPPCOE CONSULTANCY</h2>
         <h3  className="text-[0.6rem] md:text-[1.1rem] lg:text-[2rem] xl:text-[3.7rem] hidden2">VASANTDATA PATIL</h3>
         <p  className="text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] xl:text-[1.1rem] hidden2">Welcome to VPPCOE Consultancy, where innovation meets expertise! We are a team of skilled students with diverse backgrounds in software development, design, and digital strategy.</p>
         <div className="hidden2">
-        <a href='/contact-us hidden2'>Contact us</a>
+        <a href='/contact-us'>Contact us</a>
         </div>
 		{/* <div className='Search'>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />

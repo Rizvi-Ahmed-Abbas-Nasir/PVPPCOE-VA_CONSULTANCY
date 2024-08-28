@@ -41,7 +41,7 @@ export default function Header() {
             <Image className="w-[3rem]" src={Logo} width={50} height={50} />
           </div>
           <div className="flex flex-col">
-            <h3 className="text-n-1">PVPPCOE CONSULTANCY</h3>
+            <h3 className="text-n-1">VPPCOE CONSULTANCY</h3>
             <p className="text-n-1 text-xs">Initiated by Computer Engineering</p>
           </div>
         </div>
@@ -83,8 +83,7 @@ export default function Header() {
           </label>
         </div>
         <div className={active ? "Sub-SideNav-on-click" : "Sub-SideNav "}>
-
-          <div className="menuItems">
+          <div className="menuItems ">
             <Link href={"/"}>
               <h4>Home</h4>
             </Link>

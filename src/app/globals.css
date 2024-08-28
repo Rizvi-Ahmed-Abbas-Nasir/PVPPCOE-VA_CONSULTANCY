@@ -71,6 +71,10 @@ transform:translateY(0px);
 
 /* Animations */
 
+.glow-text{
+  color:cyan;
+  text-shadow:0px 0px 10px cyan;
+}
 /* @keyframes loader-rotate {
   0% {
     transform: rotate(0);

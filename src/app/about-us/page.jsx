@@ -22,14 +22,20 @@ export default function Page() {
 	
 			//    OnScrollAnimation(hiddenElement2)
 		}
-       
     }, []);
   // Array of team members
   const teamMembers = [
-    { name: "Pranav Molawade", position: "Software Developer" },
-    { name: "Rizvi Abbas", position: "Android Developer" },
+    { name: "Pranav Molawade", position: "Technical Head" },
+    { name: "Rizvi Abbas", position: "Software Developer" },
     { name: "Santosh Allu", position: "Frontend Developer" },
     { name: "Satyam Bhambid", position: "Backend Developer" },
+    { name: "Anish Tupe", position: "Flutter Developer" },
+    { name: "Varad Manegopale", position: "Web Developer" },
+    { name: "Hiya Chowdhury", position: "UI/UX Designer" },
+    { name: "Pratha Tamse", position: "Documentation Lead" },
+    { name: "Rushi Sawant", position: "Operations Manager" },
+    { name: "Riddhi Patil", position: "PRO/Marketing Lead" },
+    { name: "Abhishek Dhumal", position: "Finance Officer" },
     // Add more team members as needed
   ];
 

@@ -9,7 +9,7 @@ export default function Services() {
 
   return (
     <>
-      <div className="w-full h-[180vh] bg-[#0e0c15] flex-col overflow-hidden relative">
+      <div className=" w-full h-[180vh] bg-[#0e0c15] flex-col overflow-hidden relative">
         <div
           className="w-full h-[50%] bg-[#0e0c15] flex justify-center  items-start gap-[100px]"
           id="page4up"

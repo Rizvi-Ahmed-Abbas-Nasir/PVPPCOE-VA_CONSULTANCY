@@ -43,7 +43,7 @@ export default function ProductServices() {
         </h4>
       </div>
       <div
-        className={`w-[95%]  h-[70%]  relative CardProduct ${
+        className={`w-[100%]  h-[70%]  relative CardProduct ${
           isHovered ? "bg-img-hover" : "bg-img-default"
         }  ${isHovered2 ? "bg-img-hover2" : "bg-img-default"}
          ${isHovered1 ? "bg-img-hover1" : "bg-img-default"}`}
@@ -67,8 +67,8 @@ export default function ProductServices() {
               <p>
               Unlock your brands potential with our custom web design services,
                tailored to meet your unique business needs.
-                Partner with us to build a website that not only looks great but performs seamlessly.
               </p>
+              <h2 className="text-2xl ">Starting from 1999/-</h2>
             </div>
           </div>
           <div
@@ -85,11 +85,11 @@ export default function ProductServices() {
               </div>
             </div>
             <div className="CardPara text-white w-full">
-              <p>
+              <p className="m-3">
               Transform your ideas into powerful mobile and web applications with 
-              our custom app development services. We specialize in creating tailored solutions
-               that meet your specific business needs, ensuring a seamless user experience.
+              our custom app development services. 
               </p>
+              <h2 className="text-2xl ">Starting from 1999/-</h2>
             </div>
           </div>
           <div
@@ -109,9 +109,8 @@ export default function ProductServices() {
               <p>
               Elevate your business with our custom software development services,
                designed to streamline operations and boost efficiency.
-               Our experienced team ensures seamless integration, robust performance,
-                and scalability for future growth.
               </p>
+            <h2 className="text-2xl ">Starting from 1999/-</h2>
             </div>
           </div>
           {/* Repeat similar blocks for other cards */}
