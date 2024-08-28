@@ -43,13 +43,13 @@ export default function ProductServices() {
         </h4>
       </div>
       <div
-        className={`w-[95%]  h-[70%]  relative CardProduct ${
+        className={`w-[95%]  h-[70%] downbox relative CardProduct ${
           isHovered ? "bg-img-hover" : "bg-img-default"
         }  ${isHovered2 ? "bg-img-hover2" : "bg-img-default"}
          ${isHovered1 ? "bg-img-hover1" : "bg-img-default"}`}
       >
         <div className="Cards"></div>
-        <div className="flex flex-col lg:flex-row xl:flex-row justify-around h-full  w-full lg:h-[100%] xl:h-full relative z-2">
+        <div className=" flex flex-col lg:flex-row xl:flex-row justify-around h-full  w-full lg:h-[100%] xl:h-full relative z-2">
           <div
             className={` w-[100%]  lg:w-[40rem] xl:w-[30rem] lg:h-full h-[30rem] xl:h-full p-10 flex flex-col items-center justify-end   sm:border-b  xl:border-r  lg:border-r cursor-pointer   Cardone`}
             onMouseEnter={() => setIsHovered(true)}
@@ -72,11 +72,11 @@ export default function ProductServices() {
             </div>
           </div>
           <div
-            className={` w-[100%] lg:w-[40rem] xl:w-[30rem] h-[30rem] xl:h-full lg:h-full p-10 flex flex-col items-center justify-end border-b xl:border-r  lg:border-r cursor-pointer   Cardone`}
+            className={`secondeledownbox w-[100%] lg:w-[40rem] xl:w-[30rem] h-[30rem] xl:h-full lg:h-full p-10 flex flex-col items-center justify-end border-b xl:border-r  lg:border-r cursor-pointer   Cardone`}
             onMouseEnter={() => setIsHovered1(true)}
             onMouseLeave={() => setIsHovered1(false)}
           >
-            <div className="flex items-center justify-center gap-5 CardDiv">
+            <div className="flex items-center justify-center gap-5 CardDiv ">
               <h1 className="text-[4rem] text-white">02</h1>
               <div>
                 <h1 className="text-white text-[1.5rem] font-bold">
