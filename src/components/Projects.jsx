@@ -96,8 +96,8 @@ useGSAP(
   return (
     <div className=" min-h-screen flex flex-col items-center bg-[#00042a] w-full text-white p-8 pb-40 " ref={container}>
       <section className="abcd2 flex justify-center items-center flex-col space-y-3 mb-8 gap-2 hidden1">
-        <h2 className="scaleanimation  text-[2rem] md:text-[3rem] xl:text-[4rem] font-bold">OUR WORK</h2>
-        <h1 className="scaleanimation  text-[1.6rem] md:text-[2] xl:text-[3rem] text-cyan-300  text-center">
+        <h2 className="scaleanimation  text-[2rem] md:text-[3rem] xl:text-[4rem] font-bold ">OUR WORK</h2>
+        <h1 className="scaleanimation  text-[1.6rem] md:text-[2] xl:text-[3rem] text-cyan-300  text-center fontstyle23">
           Featured Website Design Projects
         </h1>
         <div className="flex justify-center items-center flex-col gap-3">
@@ -130,13 +130,13 @@ useGSAP(
            </div>
             
             <div className="blackout w-full h-[80%] bg-black  ">
-            <h3 className="projectnbtn absolute top-6 left-8 text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-md">
+            <h3 className="projectnbtn absolute top-6 left-8 text-2xl font-thin fontstyle23 bg-black bg-opacity-50 px-4 py-2 rounded-md">
               {project.title}
             </h3>
-              <h5 className="projecth text-3xl md:text-4xl lg:text-5xl font-bold mb-6" >Featured Website Design</h5>
+              <h5 className="projecth  text-3xl md:text-4xl lg:text-5xl font-bold mb-6" >Featured Website Design</h5>
               <p className="projectp"> {project.desc} </p>
               <Link href={project.link} target="_blank">
-              <h2 className="projectlink flex flex-row justify-center items-center">LAUNCH THE WEBSITE <GoChevronRight className="sideicon"/>
+              <h2 className="projectlink flex flex-row justify-center items-center ">LAUNCH THE WEBSITE <GoChevronRight className="sideicon"/>
               </h2>
               </Link>
             </div>

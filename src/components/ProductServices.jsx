@@ -31,7 +31,7 @@ export default function ProductServices() {
   return (
     <div className="w-full h-[250vh] lg:h-[100vh] xl:h-[120vh] flex flex-col items-center justify-start bg-[#000125] relative py-10  gap-8 z-[100] pt-10">
       <div className="flex flex-col items-center w-full gap-2 justify-center hidden1">
-        <h2 className=" text-[1.5rem] xl:text-[3rem] text-cyan-300 ">Our Website Design Process</h2>
+        <h2 className=" text-[1.5rem] xl:text-[3rem] text-cyan-300 fontstyle23">Our Website Design Process</h2>
         <h5 className="text-white text-[0.6rem] xl:text-2xl">
           How to create a website tailored to your unique business goals?
         </h5>
@@ -68,7 +68,7 @@ export default function ProductServices() {
               Unlock your brands potential with our custom web design services,
                tailored to meet your unique business needs.
               </p>
-              <h2 className="text-2xl ">Starting from 1999/-</h2>
+              <h2 className="text-2xl priceshow ">Starting from <span>1999/-</span></h2>
             </div>
           </div>
           <div
@@ -85,11 +85,11 @@ export default function ProductServices() {
               </div>
             </div>
             <div className="CardPara text-white w-full">
-              <p className="m-3">
+              <p className="">
               Transform your ideas into powerful mobile and web applications with 
               our custom app development services. 
               </p>
-              <h2 className="text-2xl ">Starting from 1999/-</h2>
+              <h2 className="text-2xl priceshow ">Starting from <span>1999/-</span></h2>
             </div>
           </div>
           <div
@@ -110,7 +110,7 @@ export default function ProductServices() {
               Elevate your business with our custom software development services,
                designed to streamline operations and boost efficiency.
               </p>
-            <h2 className="text-2xl ">Starting from 1999/-</h2>
+            <h2 className="text-2xl priceshow ">Starting from <span>1999/-</span></h2>
             </div>
           </div>
           {/* Repeat similar blocks for other cards */}

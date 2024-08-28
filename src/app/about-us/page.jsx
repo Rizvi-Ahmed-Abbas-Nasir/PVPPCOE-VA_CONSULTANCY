@@ -78,7 +78,7 @@ export default function Page() {
     <>
       <div className="h-full bg-gradient-to-b from-blue-900 to-indigo-900 text-white flex flex-col items-center py-10">
         <section className="max-w-3xl text-center mb-12 m-5 hidden1">
-          <h1 className="text-5xl font-extrabold mb-8 mt-20">About Us</h1>
+          <h1 className="text-5xl  mb-8 mt-20 fontstyle23">About Us</h1>
           <p className="text-xl leading-relaxed">
             Welcome to VPPCOE Consultancy, where innovation meets expertise! We
             are a team of skilled students with diverse backgrounds in software
@@ -103,7 +103,7 @@ export default function Page() {
         </section>
 
         <section className="max-w-4xl text-center mb-12 m-5 hidden3">
-          <h2 className="text-3xl font-bold mb-6">Meet Our Team</h2>
+          <h2 className="text-3xl font-bold mb-6 ">Meet Our Team</h2>
           <p className="text-lg leading-relaxed">
             We are a group of passionate students with diverse skills and
             interests, dedicated to delivering exceptional results and helping

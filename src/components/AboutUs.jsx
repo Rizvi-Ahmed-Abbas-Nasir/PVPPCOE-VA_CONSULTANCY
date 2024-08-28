@@ -67,7 +67,7 @@ export default function AboutUs() {
          
          
       <section className="abcd2 flex-1 flex flex-col justify-center z-4 items-start p-8 md:p-12 text-white hidden2">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 ">
           Creative Web Agency Delivering Custom Solutions
         </h1>
         <ul className=" space-y-6 text-lg md:text-xl lg:text-2xl">

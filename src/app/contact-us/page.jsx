@@ -2,6 +2,8 @@
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
+import OnScrollAnimation from "@/components/OnScrollAnimmation";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -10,7 +12,26 @@ export default function ContactPage() {
     phone: "",
     message: "",
   });
-
+  
+  useEffect(() => {
+		if (typeof document !== 'undefined') {
+			// will run in client's browser only
+			var hiddenElements1 = document.querySelectorAll(".hidden3");
+			var hiddenElements = document.querySelectorAll(".hidden2");
+			var hiddenElement2 = document.querySelectorAll(".hidden1");
+			var hiddenElement3 = document.querySelectorAll(".hidden4");
+	
+			//   var hiddenElement2 = document.querySelectorAll(".hidden3");
+			// console.log(hiddenElements);
+			OnScrollAnimation(hiddenElements1)
+			OnScrollAnimation(hiddenElements)
+			OnScrollAnimation(hiddenElement2)
+			OnScrollAnimation(hiddenElement3)
+	
+			//    OnScrollAnimation(hiddenElement2)
+		}
+    }, []);
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -47,13 +68,13 @@ export default function ContactPage() {
   return (
     <>
       <div className=" h-[auto] w-full bg-gradient-to-br from-purple-700 to-blue-900  text-white flex flex-col justify-start md:justify-center items-center ">
-        <h1 className="text-4xl mt-32 mb-10">Contact Us</h1>
+        <h1 className="text-5xl mt-32 mb-10 fontstyle23 ">Contact Us</h1>
         <div className="flex flex-col justify-start md:justify-center  md:flex-row items-center ">
           <div className="flex w-full xl:flex-row flex-col justify-start md:justify-center xl:items-start items-center">
             <div className="flex justify-center">
               <section className=" lg:max-w-3xl  flex flex-col justify-start  items-center md:items-start md:mb-12 md:mx-5 md:px-15 mt-20 ">
                 <div className="flex flex-col justify-start items-center md:items-start ">
-                  <p className="text-xl leading-relaxed font-bold">TAKE THE ROAD TO</p>
+                  <p className="text-xl  leading-relaxed font-bold">TAKE THE ROAD TO</p>
                   <h1 className=" text-[1.4rem] md:text-[4rem] text-gradient-to-br from-purple-700 to-blue-900 font-extrabold mb-8 text-black glow-text">
                     Digitizing Your Business Growth
                   </h1>
@@ -93,7 +114,7 @@ export default function ContactPage() {
               </section>
             </div>
             <div className="min-h-screen  flex items-center justify-center p-6">
-              <form className="bg-white pt-[5rem] p-5 md:p-15 xl:h-[55rem] shadow-md md:w-[45rem] h-[auto] w-[25rem] flex flex-col items-start">
+              <form className="bg-white hidden1 pt-[5rem] p-5 md:p-15 xl:h-[55rem] shadow-md md:w-[45rem] h-[auto] w-[25rem] flex flex-col items-start">
                 <div className="w-full flex flex-col gap-3">
                   <div className="mb-6">
                     <h2 className=" text-[1 rem] md:text-[1.2rem] font-bold text-blue-900">

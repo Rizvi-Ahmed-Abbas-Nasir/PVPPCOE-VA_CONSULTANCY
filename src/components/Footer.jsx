@@ -91,7 +91,7 @@ export default function Footer() {
           height={150}
           className="mb-6 teamshow"
         />
-        <h1 className="text-3xl md:text-6xl font-bold p-4 md:p-6 text-center teamshow">
+        <h1 className="text-3xl md:text-6xl font-bold p-4 md:p-6 text-center teamshow ">
           Lets Grow Your Brand
         </h1>
       </div>

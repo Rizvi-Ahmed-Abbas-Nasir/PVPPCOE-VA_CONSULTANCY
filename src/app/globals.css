@@ -411,7 +411,10 @@ transform:translateY(0px);
  padding: 5%;
  transform: translateY(-20%);
 }
-
+.blackout h2{
+  color: rgba(0, 5, 43,0.7);
+font-weight: 700;
+}
 .contentimg:hover .blackout{
   transform: translateY(-100%);
   background-color:  rgba(103, 232, 249,0.4);
@@ -420,9 +423,11 @@ transform:translateY(0px);
  .contentimg h2{
   margin-top: 10%;
   max-width: 60%;
+ 
  }
  .contentimg p{
   max-width: 60%;
+ 
    }
 .contentimg h4{
   font-size: 30px;
@@ -923,9 +928,7 @@ width: 300px;
 .blackout h5{
   display: none;
 }
-.blackout h2{
-  color: rgb(0, 5, 43);
-}
+
 .insideimg{
 
   width: 50%;
@@ -988,4 +991,18 @@ width: 300px;
   animation: fadeup linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 50%;
+}
+
+.priceshow{
+ font-size: 30px;
+ text-transform: uppercase;
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.priceshow span{
+  color: cyan;
+  text-shadow: 0px 0px 0.3px cyan;
+}
+.fontstyle23{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
 }
