@@ -114,7 +114,7 @@ export default function ContactPage() {
               </section>
             </div>
             <div className="min-h-screen  flex items-center justify-center p-6">
-              <form className="bg-white hidden1 pt-[5rem] p-5 md:p-15 xl:h-[55rem] shadow-md md:w-[45rem] h-[auto] w-[25rem] flex flex-col items-start">
+              <form className="bg-white hidden1 pt-[5rem] p-5 md:p-15 xl:h-[55rem] shadow-md md:w-[45rem] h-[auto] w-[20rem] flex flex-col items-start">
                 <div className="w-full flex flex-col gap-3">
                   <div className="mb-6">
                     <h2 className=" text-[1 rem] md:text-[1.2rem] font-bold text-blue-900">
