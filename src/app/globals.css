@@ -71,6 +71,10 @@ transform:translateY(0px);
 
 /* Animations */
 
+.glow-text{
+  color:cyan;
+  text-shadow:0px 0px 10px cyan;
+}
 /* @keyframes loader-rotate {
   0% {
     transform: rotate(0);
@@ -110,7 +114,7 @@ transform:translateY(0px);
   }
 }
 .Header{
-  height:11vh ;
+  height:11% ;
   transition: 500ms;
 
 
@@ -178,16 +182,16 @@ transform:translateY(0px);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  /* z-index: 999; */
   display: flex;
   align-items: center;
-  height: 10vh;
+  height: 10%;
   /* background: linear-gradient(135deg, rgba(17, 13, 29, 0.1), rgba(22, 18, 37, 0.1)); */
   background-color: #161225;
   
   /* animation: 1s ease-in 500ms normal none 1 running fade-down; */
-  padding-top: 0px;
-  padding-bottom: 0px;
+  /* padding-top: 0px;
+  padding-bottom: 0px; */
   transition: 500ms;
 
 
@@ -284,7 +288,7 @@ transform:translateY(0px);
 }
 
 .HamBurgerIcon{
-  z-index: 50;
+  z-index: 1200;
 }
 .label{
   display:flex;
@@ -461,6 +465,20 @@ transform:translateY(0px);
   animation: mymove 5s infinite linear;
   
 }
+
+
+
+.Sub-SideNav-on-click{
+
+  display: none;
+}
+
+.Sub-SideNav{
+  display: none;
+}
+
+
+
 #cir1{
   top:30%
 }
@@ -786,7 +804,52 @@ width: 300px;
 
 }
 
+
 @media screen and (max-width: 640px) {
+  .Sub-SideNav {
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    z-index: 1000;
+    bottom: 0;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%; /* Changed to vh for consistency */
+    box-shadow: var(--shadow-box);
+    transition: all 500ms ease-in-out; /* Unified transition property */
+  }
+  
+  .Sub-SideNav-on-click {
+    display: flex;
+    z-index: 1000;
+    bottom: 0%;
+    left: 0;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    box-shadow: var(--shadow-box);
+    transition: all 500ms ease-in-out; /* Unified transition property */
+  }
+  
+  .menuItems {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #00042a, #1e3a8a);
+    width: 100%;
+    height: 111vh;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -3rem;
+    color: white;
+  }
+  .menuItems h4{
+    font-size: 1.6rem;
+  }
 
   /* .CardProduct{
     display:flex;
@@ -894,6 +957,10 @@ width: 300px;
  }
  
 }
+
+
+
+
 
 .ppage h4{
   color:white;

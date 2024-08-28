@@ -6,6 +6,9 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 export default function Header() {
+
+  const [active, setActive] = useState(false);
+
   useEffect(() => {
     if (typeof document !== "undefined") {
       //   var hiddenElements1 = document.querySelectorAll(".hidden1");
@@ -22,7 +25,6 @@ export default function Header() {
       }
     };
   });
-  const [active, setActive] = useState(false);
   const isSticky = (e) => {
     const header = document.querySelector(".header-section");
     const scrollTop = window.scrollY;
@@ -32,14 +34,14 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed Header w-full header-section top-0 flex justify-center left-0 w-full z-50  border-b border-n-7  lg:backdrop-blur-sm  ">
+    <div className="fixed Header w-full  header-section top-0 flex justify-center left-0  z-50  border-b border-n-7  lg:backdrop-blur-sm  ">
       <div className=" lg:h-[10.5vh] h-[11vh] w-full flex justify-between items-center  px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div className="flex items-center gap-2 w-[20rem]">
           <div>
             <Image className="w-[3rem]" src={Logo} width={50} height={50} />
           </div>
           <div className="flex flex-col">
-            <h3 className="text-n-1">PVPPCOE CONSULTANCY</h3>
+            <h3 className="text-n-1">VPPCOE CONSULTANCY</h3>
             <p className="text-n-1 text-xs">Initiated by Computer Engineering</p>
           </div>
         </div>
@@ -80,6 +82,22 @@ export default function Header() {
             <span className="span"></span>
           </label>
         </div>
+        <div className={active ? "Sub-SideNav-on-click" : "Sub-SideNav "}>
+          <div className="menuItems ">
+            <Link href={"/"}>
+              <h4>Home</h4>
+            </Link>
+            <Link href={"/about-us"}>
+              <h4>About Us</h4>
+            </Link>
+            <Link href={"/contact-us"}>
+              <h4>Contact Us</h4>
+            </Link>
+            <Link href={"/our-work"}>
+              <h4>Our Work</h4>
+            </Link>
+            </div>
+          </div>
       </div>
     </div>
   );

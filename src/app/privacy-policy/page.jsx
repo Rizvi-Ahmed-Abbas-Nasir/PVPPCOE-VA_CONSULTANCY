@@ -20,16 +20,16 @@ export default function page() {
 
   return (
     <div>
-        <div className="ppage min-h-[100vh] w-[100%]  pt-[10%] pl-[20%] pr-[20%] flex gap-[10px] flex-col ">
+        <div className="ppage min-h-[100vh] w-[100%]  pt-[10%] pl-[20%] pr-[20%] items-center justify-center flex gap-[10px] flex-col ">
            <h2 className="self-center text-[20px] text-white">PRIVACY POLLICY</h2>
            
            {pdetails.map((project, index) => (
-            <div key={index} className="">
-            <h4>{project.title} </h4>
-            <p>{project.desc} </p>
+            <div key={index} className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
+            <h4 className="text-white">{project.title} </h4>
+            <p className="text-white">{project.desc} </p>
            </div>
            ))}
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*Do We Use Cookies?*</h4>
             <p>
             Cookies are small files that websites place on individual computer hard drives through web browsers. Users must explicitly allow cookies to be placed by every website that uses them. Cookies enable a website to remember a specific browser, and capture and retain particular information.
@@ -38,7 +38,7 @@ export default function page() {
             In addition, no personally identifiable information will be collected on this website unless explicitly submitted through a fill-in form, such as our Work With Us page.
             </p>
            </div>
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*Remarketing*
             </h4>
             <p>
@@ -46,7 +46,7 @@ export default function page() {
             Users can opt out of cookies through Google at any point by visiting Google Ads Preferences Manager.
             </p>
            </div>
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*Third-Party Websites*
             </h4>
             <p>
@@ -55,7 +55,7 @@ export default function page() {
             </p>
            </div>
 
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*VPPCOE Consultancy Is Committed To Data Security*
             </h4>
             <p>
@@ -65,7 +65,7 @@ export default function page() {
             </p>
            </div>
 
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*VPPCOE Consultancy Is Committed To Protecting Children’s Privacy Online*
             </h4>
             <p>
@@ -76,7 +76,7 @@ export default function page() {
             </p>
            </div>
 
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]" >
             <h4>*Our Privacy Policy and Your Consent*
             </h4>
             <p>
@@ -85,7 +85,7 @@ export default function page() {
             </p>
            </div>
 
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*Your Privacy Choices and Rights*
             </h4>
             <p>
@@ -93,7 +93,7 @@ export default function page() {
             </p>
            </div>
 
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             <h4>*Contacting VPPCOE Consultancy*
             </h4>
             <p>
@@ -101,7 +101,7 @@ export default function page() {
             </p>
            </div>
 
-           <div  className="">
+           <div  className="bg-gradient-to-br from-purple-700 to-blue-900  p-7 rounded-lg md:w-[70%] h-[40%]">
             
             <p>Vasantdada Patil Education Complex </p>
             <p>Eastern Express Highway Near Everard Nagar, Chunabhatti </p>
