@@ -118,7 +118,7 @@ export default function ContactPage() {
                 <div className="w-full flex flex-col gap-3">
                   <div className="mb-6">
                     <h2 className=" text-[1 rem] md:text-[1.2rem] font-bold text-blue-900">
-                      LET'S GROW YOUR BRAND ONLINE
+                      LET GROW YOUR BRAND ONLINE
                     </h2>
                     <h1 className=" text-[1rem] md:text-[2.5rem] font-bold text-blue-900">
                       Start a conversation with us
