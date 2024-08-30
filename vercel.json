@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "PNPM_VERSION": "9.x"
+      }
+    }
+  }
+  
