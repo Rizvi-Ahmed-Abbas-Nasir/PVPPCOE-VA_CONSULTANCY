@@ -62,17 +62,17 @@ useGSAP(
   // Define the project objects
   const projects = [
     {
-      src: "/images/temp2back.png",
+      src: "/images/projects/temp2back.png",
       title: "SalahCar",
-      src2:"/images/tem2.png",
+      src2:"/images/projects/tem2.png",
       desc:"Unleashing Your Automotive Adventure",
       link:"https://thesalahcar.com/"
     },
    
     {
-      src: "/images/temp5back.png",
+      src: "/images/projects/temp5back.png",
       title: "Revol-Tail",
-      src2:"/images/tem5.png",
+      src2:"/images/projects/tem5.png",
       desc:"Featured Website Design Projects Custom B2C, B2B and eCommerce solutions",
       link:"https://silaaiwale.netlify.app/"
     },
