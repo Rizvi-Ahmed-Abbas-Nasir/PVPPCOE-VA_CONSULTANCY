@@ -1,7 +1,11 @@
 {
     "build": {
       "env": {
-        "PNPM_VERSION": "9.x"
+        "PNPM_VERSION": "9"
+      },
+      "commands": {
+        "install": "pnpm install",
+        "build": "pnpm run build"
       }
     }
   }
