@@ -32,8 +32,8 @@ export default function Page() {
     { name: "Anish Tupe", position: "Flutter Developer" },
     { name: "Varad Manegopale", position: "Web Developer" },
     { name: "Hiya Chowdhury", position: "UI/UX Designer" },
-    { name: "Pratha Tamse", position: "Documentation Lead" },
-    { name: "Rushi Sawant", position: "Operations Manager" },
+    { name: "Pratha Tamse", position: "Product Analyst" },
+    { name: "Rushi Sawant", position: "Project Manager" },
     { name: "Riddhi Patil", position: "PRO/Marketing Lead" },
     { name: "Abhishek Dhumal", position: "Finance Officer" },
     // Add more team members as needed
