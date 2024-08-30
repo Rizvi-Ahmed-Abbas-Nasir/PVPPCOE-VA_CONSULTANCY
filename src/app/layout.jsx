@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PVPPCOE CONSULTANCY",
+  title: "VPPCOE CONSULTANCY",
   description: "Welcome to VPPCOE Consultancy, where innovation meets expertise! We are a team of skilled students with diverse backgrounds in software development, design, and digital strategy.",
 };
 
