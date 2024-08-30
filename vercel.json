@@ -1,12 +1,8 @@
 {
-    "build": {
-      "env": {
-        "PNPM_VERSION": "9"
-      },
-      "commands": {
-        "install": "pnpm install",
-        "build": "pnpm run build"
-      }
-    }
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "installCommand": "pnpm install --no-frozen-lockfile"
   }
-  
+}
